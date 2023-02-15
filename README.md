@@ -33,5 +33,9 @@
     <li>&lt;ul&gt;태그의 자식은 &lt;li&gt;이어야 한다.</li></ul>
     <p>&lt;li&gt;의 형제태그는 &lt;li&gt;만 존재할 수 있다.
   <h4>[정의형목록태그]</h4>
-  &lt;dl&gt; : 틀 &lt;dt&gt; : 제목 &lt;dd&gt; : 내용
+  <dl>
+    <dt>&lt;dl&gt; : 틀</dt>
+      <dd>&lt;dt&gt; : 제목
+      <br>&lt;dd&gt; : 내용</dd>
+  </dl>
   
