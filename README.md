@@ -17,8 +17,8 @@
     <br>
     <h4>[문서태그]</h4>
      <p><strong>&lt;strong&gt;</strong> 시각적 강조         <em>&lt; em &gt;</em> 내용의 의미 강조         <del>&lt;del&gt;</del> 글씨에 빗금</p>
-     <br><blockquote>&lt;blockquote&gt;</blockquote> <p>긴 인용문, 외부에서 가져온 내용을 블록단위로 첨부할 때.</p>
      <br><p><q>&lt;q&gt;</q>짧은 인용문, 외부에서 가져온 내용을 첨부할 때.
+     <br><blockquote>&lt;blockquote&gt;</blockquote> <p>긴 인용문, 외부에서 가져온 내용을 블록단위로 첨부할 때.</p>
      <br>&lt;hr&gt; 구분선.</p>
 <hr>
   <h2>23.02.15 - HTML - 목록태그</h2>
