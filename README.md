@@ -21,10 +21,12 @@
 <br><q>&lt;q&gt;</q>짧은 인용문, 외부에서 가져온 내용을 첨부할 때.
 <br>&lt;hr&gt; 구분선.
 </p>
-<h2>23.02.15 - HTML - 태그</h2>
+<h2>23.02.15 - HTML - 목록태그</h2>
 <p>ol,ul,li, 태그의 가족관계
-<h3>[순서태그]</h3>
+<h3>[목록태그]</h3>
+<p><strong><em>목록태그들은 전부 ⓑ, block태그들이다.</em></strong></p>
 <p><ol><li>&lt;ol&gt;태그는 &lt;li&gt; 순서가 있는 목록의 틀이다.</li>
-<p><li>&li;ol&gt;태그의 자식은 &lt;li&gt;이어야 한다.</li></ol></p>
+<p><li>&lt;ol&gt;태그의 자식은 &lt;li&gt;이어야 한다.</li></ol></p>
+<p></p>
 <p><ul><li>&lt;ul&gt;태그는 순서가 없는 목록의 틀이다.</li>
-<p><li>&li;ul&gt;태그의 자식은 &lt;li&gt;이어야 한다.</li></ul></p>
+<p><li>&lt;ul&gt;태그의 자식은 &lt;li&gt;이어야 한다.</li></ul></p>
