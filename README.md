@@ -1,4 +1,4 @@
-<h1><반응형 웹디자인/웹퍼블리셔 양성과정 버전기록></h1>
+<h1>&lt;반응형 웹디자인/웹퍼블리셔 양성과정 버전기록&gt;</h1>
   <p>날짜-제목-요약</p>
   <h2>23.02.13 html</h2>
   <P>h1~h6, p, br,inline, block</p>
@@ -7,30 +7,28 @@
 <hr>
 
 <h2>23.02.14 - HTML - 문서태그</h2>
-<h3>학습내용</h3>
-<p>strong,em,sub,sup,del,blockquote,q,code,address,code</p>
-<p>gnb, lnb, snb, fnb, Breadcrumbs</p>
-<p>[inline 태그]
-*inline 태그사용시 주의사항. block태그 안에 넣을 것. inline태그 옆에는 inline태그만.</p>
-<br>
-<h3>내용정리</h3>
-<br>
-<h4>[문서태그]</h4>
-<p><strong>&lt;strong&gt;</strong> 시각적 강조         <em>&lt; em &gt;</em> 내용의 의미 강조         <del>&lt;del&gt;</del> 글씨에 빗금
-<br><blockquote>&lt;blockquote&gt;          </blockquote> 긴 인용문, 외부에서 가져온 내용을 블록단위로 첨부할 때.
-<br><q>&lt;q&gt;</q>짧은 인용문, 외부에서 가져온 내용을 첨부할 때.         &lt;hr&gt; 구분선.
-</p>
+  <h3>학습내용</h3>
+    <p>strong,em,sub,sup,del,blockquote,q,code,address,code</p>
+    <p>gnb, lnb, snb, fnb, Breadcrumbs</p>
+    <p>[inline 태그]
+    *inline 태그사용시 주의사항. block태그 안에 넣을 것. inline태그 옆에는 inline태그만.</p>
+    <br>
+    <h3>내용정리</h3>
+    <br>
+    <h4>[문서태그]</h4>
+     <p><strong>&lt;strong&gt;</strong> 시각적 강조         <em>&lt; em &gt;</em> 내용의 의미 강조         <del>&lt;del&gt;</del> 글씨에 빗금</p>
+     <br><blockquote>&lt;blockquote&gt;</blockquote> <p>긴 인용문, 외부에서 가져온 내용을 블록단위로 첨부할 때.</p>
+     <br><p><q>&lt;q&gt;</q>짧은 인용문, 외부에서 가져온 내용을 첨부할 때.         &lt;hr&gt; 구분선.</p>
 <hr>
-
-<h2>23.02.15 - HTML - 목록태그</h2>
-<h3>학습내용</h3>
-<p>ol,ul,li, 태그의 가족관계
-</h3>내용정리</h3>
+  <h2>23.02.15 - HTML - 목록태그</h2>
+  <h3>학습내용</h3>
+    <p>ol,ul,li, 태그의 가족관계
+  <h3>내용정리</h3>
 <br>
-<h4>[목록태그]</h4>
-<p><strong><em>목록태그들은 전부 ⓑ, block태그들이다.</em></strong></p>
-<p><ol><li>&lt;ol&gt;태그는 &lt;li&gt; 순서가 있는 목록의 틀이다.</li>
-<p><li>&lt;ol&gt;태그의 자식은 &lt;li&gt;이어야 한다.</li></ol></p>
-<p></p>
-<p><ul><li>&lt;ul&gt;태그는 순서가 없는 목록의 틀이다.</li>
-<p><li>&lt;ul&gt;태그의 자식은 &lt;li&gt;이어야 한다.</li></ul></p>
+  <h4>[목록태그]</h4>
+    <p><em>목록태그들은 전부 ⓑ, block태그들이다.</em></p>
+    <ol><li>&lt;ol&gt;태그는 &lt;li&gt; 순서가 있는 목록의 틀이다.</li>
+        <li>&lt;ol&gt;태그의 자식은 &lt;li&gt;이어야 한다.</li></ol>
+    <ul><li>&lt;ul&gt;태그는 순서가 없는 목록의 틀이다.</li>
+    <li>&lt;ul&gt;태그의 자식은 &lt;li&gt;이어야 한다.</li></ul>
+    <p>li
