@@ -22,7 +22,7 @@
 <hr>
   <h2>23.02.15 - HTML - 목록태그</h2>
   <h3>학습내용</h3>
-    <p>ol,ul,li, 태그의 가족관계
+    <p>ol,ul,li,dl,dt,dd 태그의 가족관계
   <h3>내용정리</h3>
 <br>
   <h4>[목록태그]</h4>
@@ -31,4 +31,7 @@
         <li>&lt;ol&gt;태그의 자식은 &lt;li&gt;이어야 한다.</li></ol>
     <ul><li>&lt;ul&gt;태그는 순서가 없는 목록의 틀이다.</li>
     <li>&lt;ul&gt;태그의 자식은 &lt;li&gt;이어야 한다.</li></ul>
-    <p>li
+    <p>&lt;li&gt;의 형제태그는 &lt;li&gt;만 존재할 수 있다.
+  <h4>[정의형목록태그]</h4>
+  &lt;dl&gt; : 틀 &lt;dt&gt; : 제목 &lt;dd&gt; : 내용
+  
