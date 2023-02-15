@@ -5,16 +5,13 @@
   <p>h1~h3은 검색키워드로도 활용가능하다. h4~h6은 꼭 필요한 경우만 이용하거나 권장하지 않음.</p>
   <p>block과 inline태그는 의미에 맞게 외부/내부 구조로 구성해서 사용해야한다.(의미 중첩되지 않도록 주의하며 사용)</P>
 <hr>
-
 <h2>23.02.14 - HTML - 문서태그</h2>
   <h3>학습내용</h3>
     <p>strong,em,sub,sup,del,blockquote,q,code,address,code</p>
     <p>gnb, lnb, snb, fnb, Breadcrumbs</p>
     <p>[inline 태그]
     *inline 태그사용시 주의사항. block태그 안에 넣을 것. inline태그 옆에는 inline태그만.</p>
-    <br>
     <h3>내용정리</h3>
-    <br>
     <h4>[문서태그]</h4>
      <p><strong>&lt;strong&gt;</strong> 시각적 강조         <em>&lt; em &gt;</em> 내용의 의미 강조         <del>&lt;del&gt;</del> 글씨에 빗금</p>
      <br><p><q>&lt;q&gt;</q>짧은 인용문, 외부에서 가져온 내용을 첨부할 때.
