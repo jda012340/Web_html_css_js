@@ -36,11 +36,19 @@
       <br>&lt;dd&gt; : 내용</dd>
   </dl>
   <hr>
-  <h2>23.02.16 - HTML - 레이아웃태그</h2>
+  <div class="study"><h2>23.02.16 - HTML - 레이아웃태그</h2>
   <h3>학습내용</h3>
-    <p>main,div,header,navsection,aside,article,footer,figure,main,mark
+    <p>main,div,header,navsection,aside,article,footer,figure,main,mark,class,skip
   <h3>내용정리</h3>
   <h4>[시멘틱 태그]</h4>
-  <ul>ⓑdiv</ul>
-  <li>figma에서 frame과 같은 역할.</li>
-  <ㅣㅑ></ㅣㅑ>
+  <dl>
+  <dt>ⓑdiv</dt>
+  <dd>figma에서 frame과 같은 역할.</dd>
+  <dd>class를 사용하여 이름을 정의해주어야 한다.</dd>
+  <dt>class</dt>
+  <dd>이름을 정의해줄 수 있다.</dd>
+  <dt>skip</dt>
+  <dd></dd>
+  </dl>
+  </div class="study">
+  
