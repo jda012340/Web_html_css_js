@@ -48,7 +48,8 @@
   <dt>class</dt>
   <dd>이름을 정의해줄 수 있다.</dd>
   <dt>skip</dt>
-  <dd></dd>
+  <dd>나중에 css에서 skip이 붙은 부분을 숨김처리할 수 있다.</dd>
+    <dd><q>&lt;dt class="skip"&gt;현재 페이지 경로&lt;/dt&gt;</q></dd>
   </dl>
   </div class="study">
   
