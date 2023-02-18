@@ -52,4 +52,10 @@
     <dd><q>&lt;dt class="skip"&gt;현재 페이지 경로&lt;/dt&gt;</q></dd>
   </dl>
   </div class="study">
+
+<h2>23.02.16 - HTML - 태그</h2>
+
+a태그는 링크를 걸을 때 사용.
+./ 현재위치에서 ../ 상위위치에서
+
   
