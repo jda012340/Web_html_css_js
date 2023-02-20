@@ -53,11 +53,45 @@
   </dl>
   </div class="study">
 
-<h2>23.02.16 - HTML - 태그</h2>
+<h2>23.02.17 - HTML - 태그</h2>
 
 a태그는 링크를 걸을 때 사용.
 ./ 현재위치에서 ../ 상위위치에서 위치파악이 중요함
 <br> img태그는 사진을 넣을 때 닫기태그 없음
 <br> 동영상태그를 자동재생할 땐 무음처리해주기.
+
+<hr>
+<h2>23.02.20 - HTML - 표태그</h2>
+<p>&lt;table&gt; : 표를 만드는 태그<p>
+<table>
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th>태그명</th>
+      <th>의미</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+      <td rowspan="3">block</td>
+      <td>&lt;tr&gt;</td>
+      <td>가로행 태그</td>
+      </tr>
+      <tr>
+      <td>&lt;td&gt;</td>
+      <td>내용(열) 태그</td>
+      </tr>
+       <tr>
+      <td>&lt;th&gt;</td>
+      <td>제목(열) 태그</td>
+      </tr>
+      <tr>
+      <td colspan="3">colspan : 가로열합치기</td>
+      </tr>
+      <tr>
+      <td colspan="3">rowspan : 세로열합치기</td>
+      </tr>
+  </tbody>
+</table>
 
   
