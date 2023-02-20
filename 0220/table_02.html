@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-02</title>
+    <!--<link> 외부스타일시트 -->
+    <!-- 내부스타일시트(html파일 내에 css 작성하는 법) -->
+    <style>
+        table,tr,td,th {border:2px solid pink}
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">v</th>
+                <!-- <th>v</th>
+                <th>v</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">V
+                <td>v</td>
+                <td>v</td>
+                </th>
+            </tr>
+            <tr>
+                <!-- <th>V -->
+                <td colspan="2">v</td>
+                <!-- <td>v</td> -->
+                </th>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" rowspan="3">v</th>
+                <!-- <th>v</th> -->
+                <th>v</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- <th>V -->
+                <td>v</td>
+                <td>v</td>
+                </th>
+            </tr>
+            <tr>
+                <!-- <th>V -->
+                <td>v</td>
+                <td>v</td>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>v</th>
+                <th>v</th>
+                <th>v</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>V
+                <td>v</td>
+                <td>v</td>
+                </th>
+            </tr>
+            <tr>
+                <th>V
+                <td>v</td>
+                <td>v</td>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">1</th>
+                <!-- <th>2</th> -->
+                <th>3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3">1</th>
+                <td colspan="2">q</td>
+                <!-- <td>q</td> -->
+            </tr>
+            <tr>
+                <!-- <th>Q</th> -->
+                <td colspan="2">q</td>
+                <!-- <td>q</td> -->
+            </tr>
+            <tr>
+                <!-- <th>Q</th> -->
+                <td colspan="2">q</td>
+                <!-- <td>q</td> -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
