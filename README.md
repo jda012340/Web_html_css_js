@@ -103,5 +103,9 @@ a태그는 링크를 걸을 때 사용.
     <label><input tyoe="radio" name="quiz" value="id">1. id</label>
     <label><input type="radio" name="quiz" value="class">2. class</label>
     <label><input type="radio" name="quiz" value="name">3. name</label>
+    <span>다음 중 옳은 것을 모두 고르시오</span>
+    <label><input type="checkbox" name="quiz2" value="2_1">label을 따로묶어줄 때 굳이 id를 사용하지 않아도 된다.</label>
+    <label><input type="checkbox" name="quiz2" value="2_2">name은 그룹의 이름이며 다른 그룹과 이름이 겹쳐서는 안된다.</label>
+    <label><input type="checkbox" name="quiz2" value="2_3">value는 다른 값과 겹쳐도 괜찮다.</label>
   </fieldset>
 </form>
