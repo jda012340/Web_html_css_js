@@ -93,5 +93,15 @@ a태그는 링크를 걸을 때 사용.
       </tr>
   </tbody>
 </table>
-
-  
+<hr>
+<h2>23.02.21 - HTML - form태그</h2>
+<p>&lt;form&gt; : 입력, 태그, 양식 설정<p>
+<form action="#" method="get">
+  <fieldset>
+    <legend>form 퀴즈</legend>
+    <span>다음 중 label for과 연관된 input 속성은?</span><br>
+    <label><input tyoe="radio" name="quiz" value="id">1. id</label>
+    <label><input type="radio" name="quiz" value="class">2. class</label>
+    <label><input type="radio" name="quiz" value="name">3. name</label>
+  </fieldset>
+</form>
