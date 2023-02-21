@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-1</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>회원가입양식</legend>
+            <dl>
+                <dt>아이디</dt>
+                <dd><input type="text" autofocus placeholder="아이디를 입력하세요." name="user_id" maxlength="7"></dd>
+                <dt>비밀번호</dt>
+                <dd><input type="password" placeholder="비밀번호를 입력하세요." name="user_pw"></dd>
+                <dt>주민등록번호</dt>
+                <dd><input type="number" placeholder="ex)230221" name="regist_first">-
+                    <input type="password" maxlenght="7" name="regisr_last"></dd>
+                <dt>이메일</dt>
+                <dd>
+                    <input type="email" placeholder="이메일을 입력하세요." name="user_email">
+                    @
+                    <select name="mail_address">
+                        <option value="none">이메일을 선택하세요.</option>
+                        <option value="google">google.com</option>
+                        <option value="naver">naver.com</option>
+                        <option value="kakao">kakao.com</option>
+                    </select>
+                </dd>
+                <dt>연락처</dt>
+                <dd>
+                    <select name="telecom">
+                        <option value="none">통신사를 선택하세요.</option>
+                        <option value="skt">skt</option>
+                        <option value="kt">kt</option>
+                        <option value="lg">lgu+</option>
+                    </select>
+                    010-<input type="tel" placeholder=0000 name="user_num_first" maxlength="4">-<input type="tel" placeholder="0000" name="user_num_last" maxlength="4"></dd>
+                <dt>나의 보물 1호는? 비밀번호 질문 답</dt>
+                <dd><textarea name="find_pw_answer" rows="5" cols="50"></textarea></dd>
+                <dt>관심사</dt>
+                <dd>
+                    <label for="hobby_html"><input type="checkbox" id="hobby_html" value="hobby_html" name="hobby">HTML</label>
+                    <input type="checkbox" id="hobby_css"> <label for="hobby_css" value="hobby_css" name="hobby">CSS</label>
+                    <input type="checkbox" id="hobby_js"> <label for="hobby_js" value="hobby_js" name="hobby">Javascript</label>
+                </dd>
+                <dt>성별</dt>
+                <dd>
+                    <input type="radio" name="gender" value="male" id="male"> <label for="male">남</label>
+                    <input type="radio" name="gender" value="female" id="female" checked> <label for="female">여</label>
+                    <input type="radio" name="gender" value="none" id="none"> <label for="none">동의안함</label>
+                </dd>
+                <dt>선호하는 음료</dt>
+                <dd>
+                    <select name="hobby2">
+                        <optgroup label="커피(coffee)">
+                            <option value="c1">아메리카노</option>
+                            <option value="c2">카페라떼</option>
+                        </optgroup>
+                        <optgroup label="티(tea)">
+                            <option value="t1">얼그레이티</option>
+                            <option value="t2">자스민티</option>
+                        </optgroup>
+                    </select>
+                </dd>
+            </dl>
+            <div class="btn_g">
+                <button type="reset">취소</button>
+                <button type="submit">가입</button>
+                <button type="button">범용기능</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
