@@ -109,3 +109,12 @@ a태그는 링크를 걸을 때 사용.
     <label><input type="checkbox" name="quiz2" value="2_3">value는 다른 값과 겹쳐도 괜찮다.</label>
   </fieldset>
 </form>
+<hr>
+<h2>23.02.23 - CSS - 선택자</h2>
+<p>태그선택자 : HTML의 특정 태그를 선택</p>
+<blockquote>h1 {background-color:yellow;}</blockquote>
+중괄호{} 앞에 태그&lt;h1&gt;를 쓰면 그 태그 전체에 스타일이 적용.
+<p>클래스, 아이디 선택자</p>
+<blockquote>.test_box {background-color:aqua;}</blackquote>
+클래스 선택자 : 반복적인 디자인 요소를 적용 시 사용    .(점)으로 표현
+<p>자식 선택자</p>
