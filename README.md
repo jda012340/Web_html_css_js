@@ -118,3 +118,10 @@ a태그는 링크를 걸을 때 사용.
 <blockquote>.test_box {background-color:aqua;}</blackquote>
 클래스 선택자 : 반복적인 디자인 요소를 적용 시 사용    .(점)으로 표현
 <p>자식 선택자</p>
+<hr>
+<h2>23.02.24 - CSS - 선택자</h2>
+border : 선 추가
+color : 글씨색 변경
+background-color : 배경색
+line-height : 행간
+text-weight : 글씨굵기 변경
