@@ -1,0 +1,29 @@
+.wrap {background-color:lightgreen;
+    width:500px;
+    /* ☆자식에  flaot적용 시 생기는 부모 오류 해결방법☆ */
+    /* 1. 높이 강제 부여 */
+    /* height:100px; */
+    /* 2. 자식높이 재인식 */
+    /* overflow:hidden; */
+}
+/* 3. 가상자식 생성 */
+.wrap::after {clear:both; display:block; content:'d';}
+.wrap .a {
+    border:5px solid orange;
+    float:left;
+}
+.wrap .b {
+    border:5px solid green;
+    float:left;
+}
+.wrap .c {
+    border:5px solid darkblue;
+    float:right;
+    /* clear:both; */
+}
+.wrap .a, .wrap .b, .wrap .c {
+    width:100px; height:100px; background-color:yellow;
+}
+.next {width:500px; height:250px;
+    background-color:gold;
+}

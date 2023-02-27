@@ -1,0 +1,17 @@
+.wrap {background-color:lightgray;
+overflow:hidden;}
+.wrap a {
+    display:block; font-size:5rem;
+    width:100px; height:100px;
+    background-color:pink;
+    border:2px solid plum;
+}
+/* .wrap .a {float:left;}
+.wrap .b {float:left;}
+.wrap .c {clear:both; float:left;}clear 이전형제에게만 들어가는 명령어
+.wrap .d {float:right;}float는 모든 형제에게 주어야 한다. */
+
+.wrap .a {float:left;}
+.wrap .b {float:left;}
+.wrap .c {float:left;}
+.wrap .d {float:right;}

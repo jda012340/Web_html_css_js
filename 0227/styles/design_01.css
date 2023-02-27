@@ -1,0 +1,20 @@
+.path {
+    width:100vw; height:100vh; background-color:lightgrey;
+}
+.path dl {background-color:yellow;}
+.path dl dt {}
+.path dl dd {background-color:pink;}
+.path dl dd i {}
+.path dl dd span {
+    display:inline-block;
+    background-color:plum;
+    margin:5px 10px 30px 0px;
+}
+.path dl dd a {
+    background-color:purple;
+    /* width:120px; */
+    padding:10px 30px 10px 0px; 
+    display:inline-block;
+}
+.path dl dd .notosans {font-family: 'Noto Sans KR', sans-serif;}
+.path dl dd .nanum {font-family: 'Nanum Gothic', sans-serif;}
