@@ -1,0 +1,29 @@
+.box {
+    background-color:lightgrey;
+}
+.box .container {
+    background-color:lightblue;
+    width:800px; padding:50px;
+    /* overflow:hidden; */
+    margin:0 auto; /* block태그를 가운데정렬할 때 사용 상하에 0, 좌우는 자동계산으로 가운데정렬 */
+}
+.box .container::after {clear:both; display:block; content:'';}
+.box .container > * {width:100px; height:100px;}
+.box .container h1 {
+    background-color:lightgoldenrodyellow;
+    float:left;
+    text-align:center; /* inline 가운데정렬 */
+    /* padding-top:40px; */
+    line-height:100px; /* 값은 높이와 동일하게. 글자가 한 줄일 때만 가능. 수직가운데 정렬*/
+}
+.box .container p {
+    background-color:pink;
+    float:right;
+    text-align:right;
+    line-height:100px;
+}
+.box .container h1+p {
+    background-color:plum;
+    float:left;
+    text-align:center;
+}

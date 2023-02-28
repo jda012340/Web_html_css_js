@@ -1,0 +1,38 @@
+#wrap {background-color:lightcyan; padding:100px;}
+#wrap header {background-color:skyblue;}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header nav {background-color:plum;}
+#wrap header nav ul {}
+#wrap header nav ul li {}
+#wrap header nav ul li a {display:inline-block; padding:5px;}
+#wrap header nav ul li:nth-child(3) {border:2px solid red;}
+#wrap header nav ul li:last-child a {border:2px solid blue;}
+#wrap header nav > ul > li:first-child > a {border:2px solid green; color:red;}
+#wrap header nav ul li:nth-last-child(3) a {font-weight:700;}
+#wrap header nav ul li:first-child .lnb li:nth-child(3) a {background-color:gray;}
+#wrap main {}
+#wrap main section {}
+#wrap main section h2 {}
+#wrap main section h2 p {}
+#wrap main section h2:nth-of-type(2) {
+    background-color:burlywood;
+}
+#wrap main section p:nth-last-of-type(1) {
+    background-color:white;
+}
+#wrap main section p:first-of-type {color:red;}
+#wrap main section h2:last-of-type {color:yellow;}
+#wrap main section:nth-child(2) .item {font-size:2rem;}
+#wrap main section:last-child .item:nth-child(even) {background-color:lemonchiffon;}
+#wrap main section:last-child .item:nth-child(odd) {background-color:lightgreen;}
+#wrap main section:last-child .item:nth-child(3n+2) {border:4px solid darkgreen;}
+/* 
+수열선택자
+1. nth-child(n) : 같은 부모 안 형제가 2이상일 때 구분태그가 달라도 구분가능
+ex) #wrap header h1:nth-child(1) a {}
+ex) #wrap header nav ul li:nth-child(3) {}
+2. 시작과 끝을 구분하는 수열선택자
+first-child last-child
+3. 
+ */
