@@ -130,7 +130,7 @@ a태그는 링크를 걸을 때 사용.
 <p>float : 위치조절</p> 
 <p>float을 적용할 땐 모든 형제들에게 다 적용시켜줘야 한다.</p>
 <dl><dt>float적용시 생기는 부모오류 해결방법</dt>
-    <dd>높이 강제 부여 : ex) .wrap {height:100px;} </dd>
-    <dd>자식높이 재인식 : ex) overflow:hidden; </dd>
+    <dd>높이 강제 부여 : ex) 부모 {height:100px;} </dd>
+    <dd>자식높이 재인식 : ex) 부모 {overflow:hidden;} </dd>
     <dd>가상자식 생성 : </dd>
     </dl>
