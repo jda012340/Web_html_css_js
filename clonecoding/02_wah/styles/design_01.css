@@ -23,14 +23,33 @@ main .top dl dd {
     line-height:100px;
     margin:0 25px 0 0;
 }
-main .top dl dd span {}
-main .top dl dd em {}
+main .top dl dd span {
+    font-size:0.875rem;
+}
+main .top dl dd em {
+    font-size:0.875rem;
+}
+main .top dl dd .awesome:first-child::before {
+    display:inline; content:'\f015';
+    margin:0 10px 0 0;
+}
+
+main .top .awesome::after {
+    display:inline; content:'\f104';
+    margin:0 10px;
+}
+
 main section {
     /* background-color:skyblue; */
     padding-bottom:100px;
     padding:0 25px 0 20px;
     border:1px solid lightgray;
     border-right:none; border-left:none;
+    /* 배경이미지 속성 */
+    background-image:url(../images/bg.png);
+    background-size:50%;
+    background-repeat:no-repeat; /* 기본설정이 repeat */
+    background-position:90% 5%; /* x y */
 }
 main section h2 {
     padding:100px 0;
@@ -39,26 +58,17 @@ main section h2 {
 }
 main section p {
     margin-bottom:50px;
+    line-height:20px;
 }  
 main section .first_p {
     font-size:1.875rem;
-    margin:0 0 0 45px;
+    margin:0 0 100px;
+    line-height:35px;
 }
 main section .first_p span {
     font-size:1.875rem;
     color:green;
 }
-
-main .top dl dd .awesome:first-child::before {
-    display:inline; content:'\f015';
-    margin:0 10px 0 100px;
-}
-
-main .top .awesome::after {
-    display:inline; content:'\f104';
-    margin:0 10px;
-}
-
 section .awesome::before {display:inline; content:'\f144';} 
 
 
