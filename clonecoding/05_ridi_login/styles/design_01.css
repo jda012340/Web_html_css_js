@@ -1,0 +1,76 @@
+/* 속성 선택자
+input[type*=ss] {background-color:aqua;}
+input[name*=id] {background-color:coral;}
+button[type$=on] {background-color:royalblue;} */
+body {
+    background-color:#ebf6ff;
+    margin:0 auto;
+    text-align:center;
+}
+header {
+    /* background-color:beige; */
+    border-bottom:1px solid #ccc;
+    padding:15px 0; text-align:center;
+}
+header h1 {}
+header a {
+    color:#1f8ce6;
+    font-weight:700;
+    letter-spacing:-0.02em;
+}
+main {
+    /* background-color:aqua; */
+    width:350px; margin:50px auto 0;
+}
+main #loginFrm {}
+main #loginFrm fieldset {}
+main #loginFrm fieldset ul {
+    border:1px solid #ccc;
+    border-radius:5px;
+    overflow:hidden;
+    margin-bottom:10px;
+}
+main #loginFrm fieldset ul li {
+    /* background-color:#fff; padding:5px 0 5px 15px; */
+    border-bottom:1px solid #ccc;
+}
+main #loginFrm fieldset ul li:last-child {
+    background-color:#f7fbff;
+    height:30px; padding:5px;
+    border-bottom:none;
+    overflow:hidden;
+}
+main #loginFrm fieldset ul li input[name$=id] {}
+main #loginFrm fieldset ul li input[name$=pw] {}
+main #loginFrm fieldset ul li input[name$=id], main #loginFrm fieldset ul li input[name$=pw] {
+    border:0; width:350px; height:50px; padding:10px;
+    outline:none;
+}
+main #loginFrm fieldset ul li label {}
+main #loginFrm fieldset ul li span {}
+main #loginFrm fieldset ul li span input[name$=check] {
+    margin:0 5px 0 0;
+}
+main #loginFrm fieldset ul li span a {}
+main #loginFrm fieldset ul li span a:first-of-type::after {
+    content:'|'; display:inline; padding:0 5px;
+}
+main #loginFrm fieldset ul li span:first-child {float:left;}
+main #loginFrm fieldset ul li span:last-child {float:right;}
+main #loginFrm fieldset ul li label, main #loginFrm fieldset ul li span a {
+    display:inline-block;
+    font-size:0.75rem;
+}
+main #loginFrm fieldset .click {
+}
+main #loginFrm fieldset .click button[type=button] {
+    color:#fff;
+    background-color:#1f8ce6;
+}
+main #loginFrm fieldset .click a {
+    background-color:#fff; line-height:45px; text-align:center;
+}
+main #loginFrm fieldset .click button, main .click a {
+    display:block; width:350px; height:45px;
+    border-radius:5px;
+}
