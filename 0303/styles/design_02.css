@@ -1,0 +1,58 @@
+.notice {
+    width:495px; background-color:aqua;
+    border:1px solid #ccc; border-radius:10px;
+    padding:25px 20px 40px 25px;
+    position:relative;
+}
+.notice h2 {
+    font-size:1.2rem; letter-spacing:-0.02rem; font-weight:700;
+    margin-bottom:30px;
+}
+.notice .more {
+    position:absolute; right:20px; top:25px;
+}
+.notice ul {
+    background-color:yellow;
+    margin-left:100px;
+}
+.notice ul li {
+    padding:7px 0;
+    position:relative;
+}
+.notice ul li::before {
+    content:''; display:inline-block;
+    width:4px; height:4px; border-radius:50%; background-color:gray;
+    position:absolute; top:13px; left:-5px; 
+}
+.notice ul li a {
+    background-color:lime;
+    float:left;
+    width:70%;
+    white-space:nowrap; /* 한줄처리 */
+    overflow:hidden; /* 정해진 크기 안에서만 보이기 */
+    text-overflow:ellipsis; /* 외부처리를 말줄임... */
+}
+.notice ul li::after {
+    clear:both; content:''; display:inline-block;
+}
+.notice ul li span {
+    float:right;
+}
+footer {}
+footer a {
+    margin-right:10px;
+}
+footer a:nth-child(3) {
+    color:blue
+}
+footer a::after {
+    /* 
+    content:'|'; display:inline; padding-left:10px; 
+    단점 : 글자크기보다 작거나 크게 할 수 없다. 디자인 다양성의 부족.
+    */
+    width:1px; height:15px; background-color:red; content:''; display:inline-block;
+    position:relative; right:-8px; top:2px;
+}
+footer a:last-child::after {
+    display:none;
+}

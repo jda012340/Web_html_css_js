@@ -1,0 +1,25 @@
+.container {
+    width:500px; padding:30px;
+    background-color:aqua;
+    margin:50px auto 0;
+    position:fixed; right:0; top:0; /* 부모의 위치를 인식하게 하기 위해서. */
+}
+.container .contents {
+    background-color:yellow; padding:30px;
+}
+.container .contents > * {
+    display:block; padding:10px;
+    border:2px solid red; background-color:white;
+}
+.container .contents h1 {
+    position:relative;
+    left:50px; bottom:50px;
+}
+.container .contents p {
+    position:absolute; /* positon의 값이 어떤 값이든 그 값으로 인식. */
+    bottom:0; right:0;
+}
+.container .contents a {
+    position:relative;
+    bottom:0; left:0;
+}
