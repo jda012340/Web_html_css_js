@@ -136,6 +136,6 @@ a태그는 링크를 걸을 때 사용.
     </dl>
 <hr>
 <h2>23.03.03 - CSS - </h2>
-<blockquote> white-space:nowrap; /* 한줄처리 */
-overflow:hidden; /* 정해진 크기 안에서만 보이기 */
+<blockquote> white-space:nowrap; /* 한줄처리 */ <br>
+overflow:hidden; /* 정해진 크기 안에서만 보이기 */ <br>
 text-overflow:ellipsis; /* 외부처리를 말줄임... */ </blockquote>
