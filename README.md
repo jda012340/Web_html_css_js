@@ -117,7 +117,7 @@ a태그는 링크를 걸을 때 사용.
 <p>클래스, 아이디 선택자</p>
 <blockquote>.test_box {background-color:aqua;}</blackquote>
 클래스 선택자 : 반복적인 디자인 요소를 적용 시 사용    .(점)으로 표현
-<p>자식 선택자</p>
+<p>자식 선택자</p></blockquote>
 <hr>
 <h2>23.02.24 - CSS - 선택자</h2>
 <br>border : 선 추가
@@ -134,3 +134,8 @@ a태그는 링크를 걸을 때 사용.
     <dd>자식높이 재인식 : ex) 부모 {overflow:hidden;} </dd>
     <dd>가상자식 생성 : </dd>
     </dl>
+<hr>
+<h2>23.03.03 - CSS - </h2>
+<blockquote> white-space:nowrap; /* 한줄처리 */
+overflow:hidden; /* 정해진 크기 안에서만 보이기 */
+text-overflow:ellipsis; /* 외부처리를 말줄임... */ </blockquote>
