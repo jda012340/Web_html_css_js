@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0306-flex02</title>
+    <link href="./styles/reset.css" rel="stylesheet" type="text/css">
+    <style>
+        .container {background-color:lightskyblue; width:600px; height:600px; margin:0 auto;
+            padding:25px; margin:20px;}
+        .container > * {
+            border:1px solid #000;
+            width:250px; height:250px;
+            font-size:3rem;
+        }
+        .container .item {}
+        .container:first-of-type {
+            width:800px;
+            display:flex;
+            flex-flow:row wrap;
+            justify-content:center;
+            align-content:center;
+        }
+        .container:first-of-type .item {}
+        .container:nth-child(2) {
+            display:flex;
+            flex-flow:row nowrap; 
+            justify-content:center; /* 정렬방법 */
+            align-items:flex-end;
+        }
+        .container:nth-child(2) .item {}
+        .container:nth-child(3) {
+            display:flex;
+            flex-flow:row-reverse wrap;
+            /* justify-content:flex-start; */
+            align-content:center;
+        }
+        /* .container:nth-child(3) .item:first-child {order:2;}
+        .container:nth-child(3) .item:nth-child(2) {order:1;}
+        .container:nth-child(3) .item:nth-child(3) {order:4;}
+        .container:nth-child(3) .item:last-child {order:3;} */
+        .container:nth-child(4) {
+            display:flex;
+            flex-flow:row wrap;
+            justify-content:flex-end;
+            align-content:space-between;
+        }
+        .container:nth-child(4) .item {}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+</body>
+</html>
