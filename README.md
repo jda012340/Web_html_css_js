@@ -143,3 +143,10 @@ a태그는 링크를 걸을 때 사용.
   <li>white-space:nowrap; /* 한줄처리 */ <br></li>
   <li>overflow:hidden; /* 정해진 크기 안에서만 보이기 */ <br></li>
   <li>text-overflow:ellipsis; /* 외부처리를 말줄임... */ </li></blockquote>
+<hr>
+<h2>23.03.07 - CSS - </h2>
+<blockquote>
+  <strong>hover</strong>:마우스를 올렸을 때 변화
+  <p>ex)
+  <br>header .lnb:hover {color:#ff0;}
+  <br>footer .container .f_top .f_t_left a:hover {text-decoration:underline;}</p>
