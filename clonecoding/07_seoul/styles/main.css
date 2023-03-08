@@ -1,0 +1,165 @@
+header {
+    background-color:beige;
+    width:1152px; margin:0 auto;
+}
+/* #h_top 로고, 네비, 서브 *//* #h_top 로고, 네비, 서브 *//* #h_top 로고, 네비, 서브 */
+header #h_top {
+    background-color:pink;
+    height:48px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+/* .h_t_left 로고, 네비*//* .h_t_left 로고, 네비*//* .h_t_left 로고, 네비*/
+header #h_top .h_t_left {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+header #h_top .h_t_left h1 {}
+header #h_top .h_t_left h1 a {}
+header #h_top .h_t_left h1 a img {}
+header #h_top .h_t_left nav {
+    margin-left:10px;
+}
+header #h_top .h_t_left nav a {
+    font-size:0.875rem;}
+    /* .h_t_right 서브*//* .h_t_right 서브*//* .h_t_right 서브*//* .h_t_right 서브*/
+header #h_top .h_t_right {
+    background-color:plum;
+    float:right;
+}
+header #h_top .h_t_right a {
+    font-size:0.875rem;}
+/* #h_btm 로고 검색 언어 날씨*//* #h_btm 로고 검색 언어 날씨*//* #h_btm 로고 검색 언어 날씨*/
+header #h_btm {
+    background-color:skyblue;
+    height:119px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between; align-items:center;
+}
+header #h_btm h1 {
+    background-color:#fff;
+}
+header #h_btm h1 a {}
+header #h_btm h1 a img {}
+header #h_btm #search_frm {
+    background:#fff;
+    border:3px solid #1e6cb3;
+}
+header #h_btm #search_frm fieldset {
+    width:300px;
+    padding:3px 0 3px 10px;}
+header #h_btm #search_frm fieldset input[name*=search] {
+    width:250px; 
+}
+header #h_btm #search_frm fieldset input[name*=search]::placeholder {color:#1e6cb3;}
+header #h_btm #search_frm fieldset button {}
+header #h_btm #search_frm fieldset button img {}
+header #h_btm .btm_right {
+    background-color:yellow;
+    display:flex; flex-flow:column nowrap;
+    align-items:flex-end;
+}
+header #h_btm .btm_right .b_r_top {}
+header #h_btm .btm_right .b_r_top #lang {
+    border:2px solid #1e6cb3;
+    font-size:0.75rem; height:24px;
+    /* display:flex; flex-flow:row nowrap;
+    align-items:flex-start; */
+}
+header #h_btm .btm_right .b_r_top #lang option {
+}
+header #h_btm .btm_right .b_r_top #go {
+    margin-left:5px;width:36px; height:24px;
+    background-color:#1e6cb3; color:#fff;
+}
+header #h_btm .btm_right .b_r_btm {}
+header #h_btm .btm_right .b_r_btm p {
+    font-size:0.875rem; letter-spacing:-0.05em;
+}
+header #h_btm .btm_right .b_r_btm p:first-child {
+    font-size:1.438rem; font-weight:600;
+}
+/* main */
+main {
+    background-color:lemonchiffon;
+}
+main .banner {
+    height:350px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    width:1152px; margin:0 auto;
+}
+/* 왼쪽배너 : 코로나 격상안내 *//* 왼쪽배너 : 코로나 격상안내 */
+main .banner .bnr_left {position:relative;}
+main .banner .bnr_left a {}
+main .banner .bnr_left a img {}
+main .banner .bnr_left .close {
+    position:absolute; bottom:10px; right:10px;
+    padding:8px; border-radius:5px; background:#1e6cb3; color:#fff;
+}
+/* 오른쪽배너*/
+main .banner .bnr_right {
+    background-color: #000;
+    width:360px;
+    display:flex; flex-flow:column nowrap;
+    justify-content:space-between;
+}
+/* 오른쪽배너 : 코로나 현황*//* 오른쪽배너 : 코로나 현황*/
+main .banner .bnr_right .corona {
+    display:block; position:relative;
+}
+main .banner .bnr_right .corona img {}
+main .banner .bnr_right .corona span {
+    background-color:greenyellow;
+    color:white; height:28px;
+    position:absolute; display:inline-block;
+    text-align:right; line-height:28px;
+}
+main .banner .bnr_right .corona .result {text-align:center;}
+main .banner .bnr_right .corona .date {
+    width:160px;
+    position:absolute; top:7px; right:20px;}
+main .banner .bnr_right .corona .result1 {
+    width:140px;
+    position:absolute; top:78px; left:30px;
+}
+main .banner .bnr_right .corona .result2 {
+    width:140px;
+    position:absolute; top:78px; right:30px;
+}
+main .banner .bnr_right .corona .result3 {
+    width:95px;
+    position:absolute; bottom:49px; left:30px;
+}
+main .banner .bnr_right .corona .result4 {
+    width:95px;
+    position:absolute; bottom:49px; right:120px;
+}
+main .banner .bnr_right .corona .result5 {
+    width:60px;
+    position:absolute; bottom:49px; right:32px;
+}
+/* 오른쪽배너 : 교통안내 */
+main .banner .bnr_right .traffic a {}
+/* 서비스 *//* 서비스 *//* 서비스 *//* 서비스 *//* 서비스 *//* 서비스 */
+.service {}
+.service .ser_t {}
+.service .ser_t h1 {}
+.service .ser_t h1 .site {}
+.service .ser_btm {}
+.service .ser_btm a {}
+.service .ser_btm a span {}
+.service .ser_btm a:first-child span:first-child {}
+.service .ser_btm a:nth-child(2) span:first-child {}
+.service .ser_btm a:nth-child(3) span:first-child {}
+.service .ser_btm a:nth-child(3) span:first-child {}
+.service .ser_btm a:nth-child(4) span:first-child {}
+.service .ser_btm a:nth-child(5) span:first-child {}
+.service .ser_btm a:nth-child(6) span:first-child {}
+.service .ser_btm a:nth-child(7) span:first-child {}
+.service .ser_btm a:nth-child(8) span:first-child {}
+.service .ser_btm a:nth-child(9) span:first-child {}
+.service .ser_btm a:nth-child(10) span:first-child {}
+.service .ser_btm a:nth-child(11) span:first-child {}
