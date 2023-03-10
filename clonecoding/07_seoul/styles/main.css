@@ -1,3 +1,13 @@
+#top_btn {
+    border:none;
+    position:fixed; right:50px; bottom:50px;
+    z-index: 9999;
+}
+/* #top_btn button {
+    display:inline-block; width:34px; height:34px;
+    position:fixed; 
+    background: url(../images/icon_controls/btn_top.png) no-repeat;
+} */
 header {
     background-color:beige;
     width:1152px; margin:0 auto;
@@ -250,7 +260,6 @@ main .list_wrap .list_left .event .event_btm a {
     white-space:nowrap; text-overflow:ellipsis; overflow: hidden;
 }
 main .list_wrap .list_left .event .event_btm a:hover {text-decoration: underline;}
-main .list_wrap .list_left .festival .festival_btm a:hover {text-decoration: underline;}
 main .list_wrap .list_left .event .event_btm a span {}
 /* 이달의 행사축제 *//* 이달의 행사축제 *//* 이달의 행사축제 */
 main .list_wrap .list_left .festival {
@@ -269,6 +278,7 @@ main .list_wrap .list_left .festival .festival_btm {}
 main .list_wrap .list_left .festival .festival_btm a {
     display:block; width:90%; margin-bottom: 20px;
     white-space:nowrap; text-overflow:ellipsis; overflow: hidden;}
+main .list_wrap .list_left .festival .festival_btm a:hover {text-decoration: underline;}
 main .list_wrap .list_left .festival .festival_btm a span {}
 main .list_wrap .list_left .festival .festival_btm a span:first-child {
     margin-right: 10px;
@@ -293,6 +303,7 @@ main .list_wrap .list_right .usually {
 main .list_wrap .list_right .usually a {
     width:50%; margin-bottom:20px;
 }
+main .list_wrap .list_right .usually a:hover {text-decoration: underline;}
 main .list_wrap .list_right .usually a:last-child, main .list_wrap .list_right .usually a:nth-child(9) {
     margin-bottom:0px;
 }
@@ -307,6 +318,7 @@ main .category .link {
 main .category a {
     display:flex; flex-flow:column nowrap; justify-content: center; text-align: center;
 }
+main .category a:hover {color:#1e6cb3;}
 main .category a p {}
 main .category a p:first-child {
     background:pink url(../images/icon_set/css_sprites.png) no-repeat;
@@ -324,7 +336,7 @@ main .category a:nth-child(8) p:first-child {background-position-x:-589px;}
 main .news {
     width:1152px; margin:0 auto;
 }
-main .news h1 {}
+main .news h1 {padding:13px 0; margin:0 0 15px; border-bottom:1px solid #555; }
 main .news .news_link {
     display: flex; flex-flow:row wrap; justify-content:space-between;
 }
@@ -362,13 +374,15 @@ footer .footer_top .sns {
     display:flex; flex-flow:low nowrap; justify-content:space-between;}
 footer .footer_top .sns a {
     width:24px; height:24px; margin-right:10px;
+    background: url(../images/icon_sns2/css_sprites_bw.png) no-repeat;
 }
-footer .footer_top .sns a:first-child {background:url(../images/icon_sns2/icon_set_sns_02.png) no-repeat;}
-footer .footer_top .sns a:nth-child(2) {background:url(../images/icon_sns2/icon_set_sns_03.png) no-repeat;}
-footer .footer_top .sns a:nth-child(3) {background:url(../images/icon_sns2/icon_set_sns_04.png) no-repeat;}
-footer .footer_top .sns a:nth-child(4) {background:url(../images/icon_sns2/icon_set_sns_05.png) no-repeat;}
-footer .footer_top .sns a:nth-child(5) {background:url(../images/icon_sns2/icon_set_sns_06.png) no-repeat;}
-footer .footer_top .sns a:nth-child(6) {background:url(../images/icon_sns2/icon_set_sns_07.png) no-repeat; margin-right: 0;}
+footer .footer_top .sns a:hover {background: url(../images/icon_sns2/css_sprites_color.png);}
+footer .footer_top .sns a:first-child {}
+footer .footer_top .sns a:nth-child(2) {background-position-x:-25px;}
+footer .footer_top .sns a:nth-child(3) {background-position-x:-50px}
+footer .footer_top .sns a:nth-child(4) {background-position-x:-75px}
+footer .footer_top .sns a:nth-child(5) {background-position-x:-100px}
+footer .footer_top .sns a:nth-child(6) {background-position-x:-125px}
 footer .footer_btm {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
