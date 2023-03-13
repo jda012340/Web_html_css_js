@@ -150,3 +150,9 @@ a태그는 링크를 걸을 때 사용.
   <p>ex)
   <br>header .lnb:hover {color:#ff0;}
   <br>footer .container .f_top .f_t_left a:hover {text-decoration:underline;}</p>
+
+<hr>
+<h2>23.03.07 - CSS - </h2>
+<blockquote>
+  <strong>화면 너비에 따른 변화.</strong>
+  <p>max-width:~~이하 min-width:~~이상</p>
