@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_01</title>
+    <script>
+        //내부 스크립트
+        // 기본적인 변수의 선언과 대입 방법
+        //var 그릇 // 빈저장소
+        //var 그릇 = 쌀밥 //데이터 대입
+        //var 쌀밥그릇 = 콩밥 // 데이터 변경
+        // var box1 = 10 //대입 변수는 저장만 되는거지 자동으로 출력되지 않음, 출력 명령어를 따로 작성해야함. 지금은 대입만 해둔 상태
+        // window.alert(box1) //출력
+        //객체.속성
+        //객체.메소드()
+
+        var box1 //변수생성
+        var box2 =1
+        console.log(box1) //undefined 실행한다 : 메소드 괄호안에 콘솔이라는 객체안에 로그를 싫행한다 박스안에 들어있는게 무엇인지
+        box1 = 10 //한번 선언했으면 다시 안해도 됨
+        console.log(box1)
+        box2 = box1 //우측의 값을 좌측에 대입한다.
+        console.log(box1)
+        box1 = 20
+        console.log(box1, box2)
+
+        console.log(typeof box1)
+        console.log(typeof box2)
+
+        var box3 = "A" //문자는 따옴표에 묶을 것
+        console.log(typeof box3)
+        console.log(typeof box1+1)//20+1
+        console.log(typeof box3+1)//'A'+1
+
+        var box4 = '아이디를 입력하세요'
+        console.log(box4.length) //글자수세기(공백포함)
+
+        var a = 1
+        var b = a
+        var c = a + b + c //1 + 1 + undefined
+        console.log(a, b, c) //1, 1, Nan(Not a number)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
