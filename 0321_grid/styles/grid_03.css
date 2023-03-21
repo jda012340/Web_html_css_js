@@ -1,0 +1,26 @@
+.container {
+    background-color:pink;
+    display:grid;
+    grid-template-areas:
+    'big s1 s2'
+    'big s3 s4'
+    'big s5 s6'
+    ;
+    grid-template-columns:2fr repeat(2, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+    /* justify-content:center; */
+    align-items:center;
+}
+.container a {}
+.container a img {width:100%;}
+.container a span {}
+.container .big {grid-area:big; margin-right:20px;}
+.container .small {
+    margin-bottom:20px; margin-right:10px;
+}
+.container .small:nth-child(1) {grid-area:s1;}
+.container .small:nth-child(2) {grid-area:s2;}
+.container .small:nth-child(3) {grid-area:s3;}
+.container .small:nth-child(4) {grid-area:s4;}
+.container .small:nth-child(5) {grid-area:s5;}
+.container .small:nth-child(6) {grid-area:s6;}

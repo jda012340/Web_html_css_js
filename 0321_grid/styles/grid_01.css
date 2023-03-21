@@ -1,0 +1,40 @@
+.container {
+    background-color: aqua;
+    display:grid; /* grid-template-rows:100px 50px 50px 100px; */
+    /* grid-template-rows:repeat(4,100px); */
+    /* grid-template-rows:50px repeat(3,100px); */
+    /* grid-template-rows:repeat(2,100px) repeat(2,50px); */
+    /* grid-template-rows:repeat(4,minmax(150px,300px)); */
+    /* grid-template-rows:[트랙명], 트랙값 [트랙명], 트랙값; */
+    /* grid-template-rows:[row1] 50px [row2] 100px [row3] 150px [row4] 200px; */
+    /* grid-template-rows:[header] 50px [nav] 100px [row3] 150px [row4] 200px; */
+    /* grid-template-columns: 100px 50px 100px; */
+    /* grid-template-rows: 100px 200px; */
+    /* -------------------grid 연습2 */
+    grid-template-areas:
+    'item1 item2'
+    'item1 item3'
+    'item1 item4'
+    'item1 item4';
+    grid-template-rows:repeat(4, 1fr);
+    grid-template-columns:repeat(1fr);
+}
+.container .item {
+    background-color: yellow;
+}
+.container .item:nth-child(1) {
+    background-color: aquamarine;
+    grid-area:item1;
+}
+.container .item:nth-child(2) {
+    background-color: bisque;
+    grid-area:item2;
+}
+.container .item:nth-child(3) {
+    background-color: yellowgreen;
+    grid-area:item3;
+}
+.container .item:nth-child(4) {
+    background-color: violet;
+    grid-area:item4;
+}
