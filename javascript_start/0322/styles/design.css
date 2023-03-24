@@ -1,0 +1,29 @@
+body {
+  padding: 40px 0;
+  text-align: center;
+}
+body h1 {
+  font-size: 3.75rem;
+  font-family: "HS-Regular";
+  color: #FF79A1;
+  margin-bottom: 20px;
+}
+body ul {
+  border-radius: 30px;
+  border: 3px solid #FF79A1;
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+body ul li {
+  padding: 20px 0;
+}
+body ul li p {
+  margin-bottom: 10px;
+}
+body ul li p:nth-child(4) span {
+  color: #FF79A1;
+}
+body ul li:first-child {
+  background-color: #FF79A1;
+}/*# sourceMappingURL=design.css.map */
