@@ -1,0 +1,12 @@
+@keyframes bg {
+    0% {background-position:100%;}
+    100% {background-position:400%;}
+}
+@keyframes jump {
+    0% {transform:translateY(0);}
+    100% {transform:translateY(-20px);}
+}
+@keyframes move {
+    0% {background-position:0;}
+    100% {background-position:10000px;}
+}
