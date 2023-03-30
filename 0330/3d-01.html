@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d-1</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        body {text-align: center; overflow:hidden;}
+        #go {
+            position:fixed; left:25px; top: 25px; border-radius:10px;
+            padding:20px; background:#222; color:#fff;
+        }
+        #perspective {
+            /* background:#eee; */
+            display:inline-flex;
+            padding:30px; margin-top:200px;
+            transform-style:preserve-3d; /* 부모내의 자식 */
+            perspective:100px; /* 사람과 화면 상의 거리 */
+        }
+        #perspective .box {
+            background:hotpink;
+            width:200px; height:200px;
+            /* transition:all 0.5s; margin:100px; */
+            animation:ts3d 2s linear alternate infinite;
+        }
+
+        /* hover */
+        #go:hover ~ #perspective>.box {
+            /* transform: rotateX(80deg) skew(10deg); */
+        }
+
+        @keyframes ts3d {
+            0% {transform:perspective(1000px) rotateY(0) skew(0) translateX(0);}
+            50% {transform:perspective(500px) rotateX(360deg) skew(0)  translateX(20px);}
+            50% {transform:perspective(200px) skew(0)  translateX(50px);}
+            100% {transform:perspective(60px) rotateY(180deg) skew(20deg)  translateX(80px);}
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="go">GO</button>
+    <div id="perspective">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04</title>
+    <style>
+        body {background-color:#f68a16; overflow-x:hidden;
+        }
+        .perspective {
+            text-align:center;
+            transform-style:preserve-3d;
+            perspective:100px;
+        }
+        .perspective .box {
+            display:inline-flex;
+            width:200px; height:200px; overflow:hidden; margin:50px;
+            border:3px solid #fff; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.3); border-radius:100%;
+            background:url(./images/burger1.jpg); background-size:170%; background-position:290px 320px;
+            /* animation:big 1s linear; */
+        }
+        .perspective .box:nth-child(1) {
+            animation:big 0.5s linear, outL 1s linear alternate 2 0.5s forwards;
+        }
+        .perspective .box:nth-child(2) {
+            animation:big 0.5s linear, outR 1s linear alternate 2 0.5s forwards;
+        }
+        .perspective .box img {width:100%;}
+        @keyframes big {
+            0% {transform:scale(1) translateY(0);}
+            100% {transform:scale(1.1) translateY(200px);}
+        }
+        @keyframes outL {
+            0% {transform:scale(1.1) translateY(200px) translateX(0);}
+            100% {transform:scale(1.1) translateY(200px)translateX(-999px);}
+        }
+        @keyframes outR {
+            0% {transform:scale(1.1) translateY(200px) translateX(0);}
+            100% {transform:scale(1.1) translateY(200px) translateX(999px);}
+        }
+    </style>
+</head>
+<body>
+    <div class="perspective">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
