@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>business</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        body, html {background-color:#eee;}
+        .wrap {}
+        .wrap .card_wrap {
+            position:relative; left:0; top:0; width:500px;
+            transform-style:preserve-3d;
+            /* transition:all 1s; */
+            animation:card 5s ease alternate infinite;
+        }
+        .wrap .card_wrap .card {
+            background:yellow;
+            width:100%; position:absolute; backface-visibility:hidden;
+        }
+        .wrap .card_wrap .card img {width:100%;}
+        .wrap .card_wrap .front {transform:rotateY(0);}
+        .wrap .card_wrap .back {transform:rotateY(180deg);}
+        .wrap:hover > .card_wrap {
+            /* transform:rotateY(180deg); */
+            animation-play-state:paused;
+        } 
+        @keyframes card {
+            0% {transform:rotateY(0);}
+            100% {transform:rotateY(180deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="card_wrap">
+            <div class="card front"><img src="./images/front.png" alt=""></div>
+            <div class="card back"><img src="./images/back.png" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>

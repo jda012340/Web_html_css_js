@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>in_01</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        #frm {
+            background-color:#eee;
+        }
+        #frm #chk {appearance:none;}
+        #frm label {}
+        #frm label::before {
+            content:''; display:inline-block;
+            width:20px; height:20px;
+            /* background:#ff0 url(./images/checked.png) no-repeat; */
+            background:white; box-shadow:0 0 5px rgba(0,0,0,0.1);
+            background-size:100%;
+        }
+        #frm #chk:checked + label::before {
+            background:url(./images/checked.png) no-repeat;
+            background-size:100%;
+        }
+        #frm2 {}
+        #frm2 #chk2 {appearance:none;}
+        #frm2 label {}
+        #frm2 label::before {
+            content:''; display:inline-block; width:25px; height:25px;
+            background:url(./images/robot.png) no-repeat;
+            background-size:100%;
+        }
+        #frm2 #chk2:checked + label {color:;}
+        #frm2 #chk2:checked + label::before {
+            background:url(./images/man.png) no-repeat;
+            background-size:100%;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post" id="frm">
+        <input type="checkbox" name="chk" id="chk">
+        <label for="chk">로그인 상태 유지</label>
+    </form>
+    <form action="#" method="post" id="frm2">
+        <input type="checkbox" name="chk2" id="chk2">
+        <label for="chk2">당신은 로봇입니까?</label>
+    </form>
+</body>
+</html>

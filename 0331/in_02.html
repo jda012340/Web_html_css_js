@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        #frm {background-color:#eee;}
+        #frm #switch {
+            appearance:none;
+            background:#aaa; border-radius:20px;
+            width:40px; height:20px;
+        }
+        #frm #switch::after {
+            content:''; display:block; background:#fff url(./images/hot.png); border-radius:100%;
+            width:15px; height:15px;
+            position:absolute; top:2px; left:2px;
+        }
+        #frm #switch:checked {
+            background:linear-gradient(90deg, yellow, pink);
+        }
+        #frm #switch:checked::after {
+            left:20px;
+        }
+        #frm #switch, #frm #switch::after {transition:all 0.5s;}
+        /* 222222222222222222222222222222222222222222222222222 */
+        #frm2 {}
+        #frm2 #switch2 {
+            position:relative;
+            appearance:none;
+            background:linear-gradient(red, blue); border-radius:20px;
+            width:20px; height:100px;
+        }
+        #frm2 #switch2::after {
+            position:absolute; top:2px; left:2.5px;
+            content:''; display:block; width:15px; height:15px; 
+            background-image:url(./images/hot.png); background-size:cover; border-radius:100%;
+        }
+        #frm2 #switch2, #frm2 #switch2::after {transition:all 1s;}
+        #frm2 #switch2:checked {
+            background:linear-gradient(red, blue);
+        }
+        #frm2 #switch2:checked::after {
+            top:80px; background-image:url(./images/cold.png); background-size:cover;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post" id="frm">
+        <input type="checkbox" name="switch" id="switch">
+    </form>
+    <form action="#" method="post" id="frm2">
+        <input type="checkbox" name="switch2" id="switch2">
+    </form>
+</body>
+</html>
