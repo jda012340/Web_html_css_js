@@ -6,7 +6,7 @@ strong,em,del,sup,sub,s,q,img,a,
 table,tr,th,td,thead,tbody,tfoot,
 form,input,fieldset,legend,button,label,textarea,option,select,
 nav,header,footer,article,section,aside,figure,figcaption,main,div,span {
-    font-family:'맑은 고딕', "Font Awesome 5 Free", "Font Awesome 5 Brands";
+    font-family:'Nanum+Gothic', "Font Awesome 5 Free", "Font Awesome 5 Brands";
     margin:0; padding:0;
     font-size:1.0rem;
     font-weight:normal;

@@ -125,4 +125,86 @@ header nav > ul > li .sub {
 header nav > ul > li .sub li a {
   padding: 10px;
   display: block;
+}
+
+main .right_popup {
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+main .right_popup #popup_btn {
+  background-color: #eee;
+  width: 30px;
+  display: flex;
+  flex-flow: column;
+}
+main .right_popup #popup_btn a {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  padding: 5px 5px;
+  text-align: center;
+}
+main .right_popup #popup_btn a:first-child {
+  background-color: #ff7f50;
+}
+main .right_popup .contents {
+  background-color: #fff;
+  width: 500px;
+  height: 100vh;
+  padding: 50px 20px;
+}
+main .right_popup .contents > * {
+  margin-bottom: 30px;
+}
+main .right_popup .contents .info {
+  text-align: center;
+  margin: 0 auto 30px;
+}
+main .right_popup .contents .info_contents {
+  text-align: center; /* margin:0 auto 30px; */
+  color: #aaa;
+  line-height: 1.6;
+}
+main .right_popup .contents .user {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-transform: uppercase;
+}
+main .right_popup .contents .user a {
+  border-bottom: 1px solid #aaa;
+  padding: 5px;
+  margin-right: 5px;
+  font-weight: 600;
+}
+main .right_popup .contents .user a span {
+  color: #ff7f50;
+}
+main .right_popup .contents .board {
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .right_popup .contents .board a {
+  border-bottom: 1px solid #aaa;
+  padding: 5px;
+  margin-right: 5px;
+}
+main .right_popup h2 {
+  font-weight: 600;
+}
+main .right_popup > p {
+  width: 50%;
+}
+main .right_popup > p img {
+  width: 100%;
+}
+main .right_popup address {
+  font-size: 3rem;
+  font-weight: 600;
+}
+main .right_popup p:last-child {
+  line-height: 1.6;
 }/*# sourceMappingURL=main.css.map */
