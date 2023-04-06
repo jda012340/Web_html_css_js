@@ -207,4 +207,90 @@ main .right_popup address {
 }
 main .right_popup p:last-child {
   line-height: 1.6;
+}
+main .event_bnr {
+  background-color: yellow;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 80px auto;
+}
+main .event_bnr a {
+  width: 32%;
+}
+main .event_bnr a img {
+  width: 100%;
+}
+main .weekly_best {
+  width: 1200px;
+  margin: 0 auto;
+}
+main .weekly_best .product_list {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-between;
+  margin-top: 80px;
+}
+main .weekly_best .product_list .product .photo img {
+  width: 100%;
+}
+main .weekly_best .product_list .product h2 {
+  margin: 10px 0;
+}
+main .weekly_best .product_list .product .product_btm {
+  margin-top: 20px;
+  border-top: 1px solid #222;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .weekly_best .product_list .product .product_btm .review {
+  text-align: right;
+  color: #ff7f50;
+}
+main .weekly_best .product_list .product .product_btm p:last-child {
+  margin: 10px 0 60px;
+}
+main .weekly_best .product_list .product .product_btm p:last-child .best {
+  background-color: #ffe4c4;
+  color: #fff;
+}
+main .weekly_best .product_list .product .product_btm p:last-child .order_made {
+  background-color: #000080;
+  color: #fff;
+}
+main .shop_banner_bg {
+  background-image: url(../images/made_img.jpg);
+}
+main .shop_banner_bg .shop_banner {
+  text-align: center;
+  padding: 80px 0;
+  margin-bottom: 80px;
+}
+main .shop_banner_bg .shop_banner h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+}
+main .shop_banner_bg .shop_banner a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+footer {
+  border-top: 1px solid #aaa;
+}
+footer .footer_contents {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+footer .footer_contents .fnb {
+  margin-bottom: 20px;
+  color: #aaa;
 }/*# sourceMappingURL=main.css.map */

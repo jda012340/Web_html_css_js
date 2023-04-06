@@ -39,15 +39,31 @@ nav_acc[12].addEventListener('mouseout',function(){
     console.log(this)
     nav_acc_sub[0].style.display = 'none'
 })
-//5. lang에 mouse over/out 적용
-kr_lnb.addEventListener('mouseover',function(){
-    kr_lnb_open.style.display = 'block'
+//5. lang 열렸다가 닫히기 적용
+// kr_lnb.addEventListener('mouseover',function(){
+//     kr_lnb_open.style.display = 'block'
+// })
+// kr_lnb.addEventListener('mouseout',function(){
+//     kr_lnb_open.style.display = 'none'
+// })
+let kr_lnb_boolean = true
+kr_lnb.addEventListener('click',function(){
+    kr_lnb.style.transition = 'all 0.5s'
+    if(kr_lnb_boolean){
+        kr_lnb_open.style.display = 'block'
+    }else{kr_lnb_open.style.display = 'none'}
+    kr_lnb_boolean = !kr_lnb_boolean
 })
-kr_lnb.addEventListener('mouseout',function(){
-    kr_lnb_open.style.display = 'none'
-})
-//메뉴열기~~~
+//side popup메뉴열기
+let popup_boolean = true //popup용 논리데이터
 popup_btn.addEventListener('click',function(){
     right_popup.style.transition = 'all 0.5s'
-    right_popup.style.transform = 'translateX(0)'
+    if(popup_boolean){
+        console.log('보이기')
+        right_popup.style.transform = 'translateX(0)'
+    }else{
+        console.log('숨기기')
+        right_popup.style.transform = 'translateX(500px)'
+    }
+    popup_boolean = !popup_boolean
 })
