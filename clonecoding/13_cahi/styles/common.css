@@ -1,0 +1,64 @@
+#h_bg {
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+#h_bg header {
+  height: 104px;
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#h_bg header .right nav a {
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  font-weight: 600;
+}
+#h_bg header .right nav a:hover {
+  color: #189bfa;
+}
+#h_bg header .right nav .all_nav {
+  background-color: #189bfa;
+  color: #fff;
+  padding: 15px 10px;
+}
+#h_bg header .right nav .all_nav:hover {
+  background-color: #0a80d4;
+  color: #fff;
+}
+#h_bg header .right nav a::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  position: relative;
+  left: 0;
+  top: 4px;
+}
+#h_bg header .right nav a:nth-child(2)::before {
+  background-image: url(../images/banner_gray2.png);
+}
+#h_bg header .right nav a:nth-child(3)::before {
+  background-image: url(../images/language.png);
+}
+#h_bg header .right nav a:nth-child(4)::before {
+  content: "\f002";
+  font-weight: 600;
+  font-size: 1.3rem;
+  top: 0px;
+}
+#h_bg header .right nav .all_nav::before {
+  background-image: url(../images/allMenu.png);
+  width: 24px;
+  height: 24px;
+}/*# sourceMappingURL=common.css.map */

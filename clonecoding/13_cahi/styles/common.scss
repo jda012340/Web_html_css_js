@@ -1,0 +1,45 @@
+//색상변수
+$point1:#189bfa;
+$point2:#ff5252;
+$star:#ff9e06;
+$bg1:#eee;
+$bg2:#fff;
+$txt1:#aaa;
+$txt2:#222;
+$txt3:#000;
+//common.css 통합 = header, footer design
+//main.css = Main Design
+//responsive.css = 반응형 design
+#h_bg {
+    background-color:$bg2; position:fixed; left:0; top:0; z-index:999;
+    box-shadow:0 1px 20px rgba(0,0,0,0.3); width:100%; //자식이 커지면 부모가 늘어나니 높이 ㄴㄴ
+    header {
+        height:104px; width:1024px; margin:0 auto;
+        display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+        h1 {a{img{}}}
+        .right {
+            nav {
+                a {
+                    background-repeat:no-repeat; margin-right:10px;
+                    font-weight:600;
+                }
+                a:hover {color:$point1;}
+                a:nth-child(1) {}
+                a:nth-child(2) {}
+                a:nth-child(3) {}
+                a:nth-child(4) {}
+                .all_nav {background-color:$point1; color:$bg2; padding:15px 10px;}
+                .all_nav:hover {background-color:#0a80d4; color:$bg2;}
+                a::before {
+                    content:''; width:20px; height:20px; display:inline-block;
+                    background-repeat:no-repeat; background-size:cover; margin-right:5px; position:relative; left:0; top:4px;
+                }
+                // a:nth-child(2)::before,a:nth-child(3)::before {}
+                a:nth-child(2)::before {background-image:url(../images/banner_gray2.png)}
+                a:nth-child(3)::before {background-image:url(../images/language.png)}
+                a:nth-child(4)::before {content:'\f002'; font-weight:600; font-size:1.3rem; top:0px;}
+                .all_nav::before {background-image:url(../images/allMenu.png); width:24px; height:24px;}
+            }
+        } 
+    }
+}
