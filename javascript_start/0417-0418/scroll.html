@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll-1</title>
+    <style>
+        html,body {scroll-behavior:smooth;}
+        body {
+            height:200vh;
+            background:radial-gradient(rgb(111, 173, 255),pink);
+        }
+        #scroll_btn {
+            position:fixed; left:50px; top:50px; padding:50px;
+        }
+        #top_btn {
+            position:fixed; right:50px; bottom:50px; padding:50px; border-radius:100%; border:5px dashed darkgreen; width:20px; height:20px;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="scroll_btn">scroll</button>
+    <button type="button" id="top_btn">top!</button>
+    <script>
+        const scroll_btn = document.querySelector('#scroll_btn')
+        const top_btn = document.querySelector('#top_btn')
+        console.log(scroll_btn)
+        //window.scrollBy(x,y) 현재 위치 기준 스크롤 이동 함수(상대적)
+        scroll_btn.addEventListener('click',()=>{
+            window.scrollBy(0,10)
+        })
+        
+        //window.scrollTo(x,y) 문서의 지정된 위치로 스크롤 함수
+        scroll_btn.addEventListener('click',()=>{
+            // window.scrollTo(0,200)
+            window.scrollTo({left:0, top:500})
+        })
+        top_btn.addEventListener('click',()=>{
+            window.scrollTo({top:0})
+        })
+    </script>
+</body>
+</html>

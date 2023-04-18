@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll-by</title>
+    <style>
+        #wrap {
+            width:500px; height:250px;
+            overflow-x:auto;
+            overflow-y:hidden;
+        }
+        #box {
+            width:max-content; height:250px;
+            display:flex;
+        }
+        #box > div {width:500px; height:250px;}
+        #box .a {background-color:skyblue;}
+        #box .b {background-color:plum;}
+        #box .c {background-color:coral;}
+        #box .d {background-color:pink;}
+    </style>
+</head>
+<body>
+    <button type="button" id="top">좌</button>
+    <button type="button" id="btm">우</button>
+    <div id="wrap">
+        <div id="box">
+            <div class="a">a</div>
+            <div class="b">b</div>
+            <div class="c">c</div>
+            <div class="d">d</div>
+        </div>
+    </div>
+
+    <script>
+        const top_btn = document.querySelector('#top')
+        const btm_btn = document.querySelector('#btm')
+        const box = document.querySelector('#box')
+        const wrap = document.querySelector('#wrap')
+        
+        top_btn.addEventListener('click',()=>{
+            wrap.scrollBy(-500,0)
+        })
+        btm_btn.addEventListener('click',()=>{
+            wrap.scrollBy(500,0)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0414</title>
+    <style>
+        * {padding:20px; margin:10px;}
+        #wrap {background-color:black;}
+        #wrap #box {background-color:pink;}
+        #wrap #box p {background-color:white;}
+        #result {background-color:hotpink;}
+        #result .test {background-color:violet;}
+        .a {border:5px solid purple;}
+        .b {animation:opacity 0.5s linear 0.5s both;}
+        .c {animation:jump 0.3s linear alternate infinite;}
+
+        @keyframes opacity {
+            0% {opacity:0;}
+            100% {opacity:1;}
+        }
+        @keyframes jump {
+            0% {transform:translateY(0);}
+            100% {transform:translateY(-50px);}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="box">
+            <p class="first">first</p>
+            <p class="second">second</p>
+            <p class="last">last</p>
+        </div>
+    </div>
+    <div id="result">
+        <p class="test">test</p>
+    </div>
+    <!-- <script src="./script/node1.js"></script> -->
+    <!-- <script src="./script/node2.js"></script> -->
+    <!-- <script src="./script/node3.js"></script> -->
+    <!-- <script src="./script/node4.js"></script> -->
+    <script src="./script/node5.js"></script>
+</body>
+</html>

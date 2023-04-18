@@ -1,0 +1,49 @@
+#imgWrap .image {
+  width: 100%;
+  height: 95vh;
+}
+#imgWrap .A {
+  background: url(../images/bg1.jpg) no-repeat;
+  background-size: cover;
+}
+#imgWrap .B {
+  background: url(../images/bg2.jpg) no-repeat;
+  background-size: cover;
+}
+#imgWrap .C {
+  background: url(../images/bg3.jpg) no-repeat;
+  background-size: cover;
+}
+#imgWrap .D {
+  background: url(../images/bg4.jpg) no-repeat;
+  background-size: cover;
+}
+
+#snb {
+  position: fixed;
+  top: 50%;
+  right: 50px;
+}
+#snb a {
+  display: block;
+  position: absolute;
+  right: 0;
+  background-color: black;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all 0.4s;
+  transform: transform-origin(center right);
+}
+#snb .a_over {
+  display: block;
+  background: #555;
+  color: #fff;
+  text-align: right;
+  content: "interior A";
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+}/*# sourceMappingURL=interior.css.map */

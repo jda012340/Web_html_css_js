@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0413-02</title>
+    <style>
+        * {padding:20px;}
+        #box1 {background-color:rgb(14, 39, 22);}
+        #box1 #box2 {background-color:rgb(41, 97, 59);}
+        #box1 #box2 .p {background-color:lemonchiffon;}
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <div id="box2">
+            <p class="p">1</p>
+            <p class="p">2</p>
+            <p class="p">3</p>
+        </div>
+    </div>
+    <script>
+        const box1 = document.querySelector('#box1')
+        const box2 = document.querySelector('#box2')
+        const p = document.querySelectorAll('.p')
+        console.log(box1,box2,p)
+
+        //Node 관계(p 기준)
+        console.log(p[0].parentNode) //부모확인
+        console.log(p[0].parentNode.parentNode) //부모의부모
+        console.log(p[0].parentNode.parentNode.parentNode) //부모의부모의부모
+        console.log(p[0].nextElementSibling) //다음형제
+        console.log(p[1].previousElementSibling) //이전형제
+        
+        console.log(box2.childNodes) //공백(엔터)포함
+        console.log(box2.children) //요소만 인식
+        console.log(box2.firstChild) //첫번째 자식
+        console.log(box2.firstElementChild)
+        console.log(box2.lastChild) //마지막 자식
+        console.log(box2.lastElementChild)
+        console.log()
+
+        box2.parentNode.firstElementChild //box2
+        box2.children.parentNode.parentNode //error => children에 인덱스
+        box2.children[0].parentNode.parentNode //box1
+        p.parentNode.lastElementChild.parentNode//error => p에 인덱스
+        p[1].parentNode.lastElementChild.parentNode//box2
+
+
+        
+    </script>
+</body>
+</html>
