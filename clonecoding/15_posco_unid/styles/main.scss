@@ -1,0 +1,62 @@
+$color1:#0f6e38;
+$color2:#0d278d;
+$color3:#fff;
+$color4:#000;
+$color5:#555;
+@mixin layout {width:1400px; margin:0 auto;}
+header {
+    background-color:aqua;
+    @include layout; height:100px;
+    position:fixed; top:0; left:50%; z-index:999;
+    transform:translateX(-50%);
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+    h1 {a{ img{}}}
+    nav {
+        .gnb {
+            background-color:yellow;
+            display:flex; flex-flow:row nowrap; justify-content:space-between;
+            > li {
+                position:relative;
+                > a {
+                    background-color:hotpink;
+                    display:block; height:100px; line-height:100px;
+                    text-transform:uppercase; font-weight:700; width:200px; 
+                }
+                .snb {
+                    background-color:$color3;
+                    display:flex; flex-flow:column nowrap; width:100%; height:300px;
+                    position:absolute; top:100px;
+                    > li {
+                        border-right:1px solid $color5;
+                        a {
+                            display:block; width:100%; padding:15px;}
+                    }
+                }
+                // .snb::after {
+                //     content:''; width:9999px; height:300px; display:block;
+                //     position:absolute; top:100px; left:-500px; background-color:aqua;
+                // }
+            }
+            li:last-child {margin-right:0;}
+        }
+        .bg {
+            background-color:pink; width:1000%; height:300px; 
+            position:absolute; top:100px; left:-50%; z-index:-1;
+        }
+    }
+}
+header::after {
+    content:''; display:block; width:3000%; height:100%;
+    background-color:$color3;
+    position:absolute; top:0; left:-500px; z-index:-1;
+}
+main {
+    .visual {
+        width:100%; height:100vh; position:relative; z-index:100;
+        background:url(../images/posco/s01_bg.jpg) no-repeat center; background-size:cover;
+    }
+    .visual::after {
+        content:''; display:block; width:100%; height:100vh; position:absolute; top:0; left:0; z-index:90;
+        background:linear-gradient(90deg, $color2, transparent, $color1);
+    }
+}

@@ -1,0 +1,114 @@
+#h_bg {
+  position: fixed;
+  z-index: 990;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#h_bg header {
+  width: 1400px;
+  height: 100px; /* margin:0 auto; */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+}
+#h_bg header nav .gnb {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+#h_bg header nav .gnb > li {
+  position: relative;
+  padding-right: 80px;
+}
+#h_bg header nav .gnb > li > a {
+  font-weight: 900;
+  font-size: 1.2rem;
+  line-height: 100px;
+}
+#h_bg header nav .gnb > li .sub {
+  position: absolute;
+  top: 100px;
+}
+#h_bg header nav .gnb > li .sub li > a {
+  display: block;
+  font-size: 1.2rem;
+  padding: 15px 0;
+}
+#h_bg header nav .gnb > li .sub li .sub2 li {
+  border-bottom: 1px dashed #ccc;
+}
+#h_bg header nav .gnb > li .sub li .sub2 li a {
+  display: block;
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #888;
+  font-weight: 700;
+}
+#h_bg header .all_nav {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  width: 35px;
+  height: 25px; /*  transform:skewX(-30deg); */
+}
+#h_bg header .all_nav span {
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-color: #003a14;
+}
+#h_bg header .all_nav span:nth-child(1) {
+  transform: skewX(-40deg);
+}
+#h_bg header .all_nav span:nth-child(2) {
+  transform: skewX(-40deg) translateX(-5px);
+}
+#h_bg header .all_nav span:nth-child(3) {
+  transform: skewX(-40deg) translateX(-10px);
+}
+#h_bg .nav_bg {
+  background-color: #fff;
+  position: relative;
+  top: 100px;
+  width: 100%;
+  height: 70vh;
+  border-top: 1px solid #ccc;
+}
+
+main .visual {
+  background-color: beige;
+  width: 100%;
+  height: 100vh;
+  padding: 200px 300px;
+  background: url(../images/unid/bg.jpg) no-repeat center;
+  background-size: cover;
+}
+main .visual .txt span {
+  display: block;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+main .visual .right_img {
+  position: relative;
+  width: 200px;
+  transform: translate(-50%, -50%);
+}
+main .visual .right_img img:first-child {
+  width: 100%;
+}
+main .visual .right_img img:last-child {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}/*# sourceMappingURL=unid.css.map */
