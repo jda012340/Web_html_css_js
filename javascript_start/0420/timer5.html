@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>1
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer5</title>
+    <style>
+        body {
+            height:500vh;
+            background:linear-gradient(yellow,lightblue);
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        let num=0
+        let timer=setTimeout(set,1000)
+        let timer2=setTimeout(scroll,200)
+        //스크롤의 원리
+        /* 
+        f5를 눌러서 되는 것이 아니라
+        f5를 누르면 새로고침이 됨. 그 때 처음 읽는 함수가 scroll이라서 맨 위로 이동하는 것.
+         */
+        
+
+        scroll()
+
+        function scroll(){
+            window.scrollTo(0,0)
+        }
+
+        function set(){
+            num++
+            console.log(num)
+        }
+    </script>
+</body>
+</html>

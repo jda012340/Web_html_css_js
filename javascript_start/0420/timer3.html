@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer2</title>
+    <style>
+        *{box-sizing:border-box; margin:0; padding:0;}
+        #slider_wrap {
+        height:200px; width:max-content; overflow:hidden; margin:0 auto;
+        }
+        #slider_wrap #slider_container {
+            display:flex; flex-flow:column nowrap;
+        }
+        #slider_wrap #slider_container .slide {
+            height:200px; width:700px; text-align:center; font-size:5rem;
+        }
+        #slider_wrap #slider_container .slide1 {background-color:yellow;}
+        #slider_wrap #slider_container .slide2 {background-color:yellowgreen;}
+        #slider_wrap #slider_container .slide3 {background-color:lightblue;}
+    </style>
+</head>
+<body>
+    <div id="slider_wrap"><!-- 나간 슬라이드 숨기기 -->
+        <div id="slider_container"><!-- 슬라이드를 옆으로 나열 -->
+            <div class="slide slide1">1</div><!-- 개별슬라이드 -->
+            <div class="slide slide2">2</div>
+            <div class="slide slide3">3</div>
+        </div>
+    </div>
+    <script>
+        // const slide = document.querySelector('#slider_container')
+        // let maxNum = slide.children.length-1
+        // let moveSlide = slide.children[0].offsetHeight
+        // console.log(moveSlide)
+        // num=0
+        // setInterval(()=>{
+        //     num++
+        //     if(num>maxNum){num=0}
+        //     console.log(`setInterver-${num}`)
+        //     slide.style.transition = `all 0.5s`
+        //     slide.style.transform = `translateY(-${num*moveSlide}px)`
+        // },1000)
+
+        const slide = document.querySelector('#slider_container')
+        let num = 0
+        let timer = setInterval(slide_set, 1000)
+
+        function slide_set(){
+            num++
+            if(num>2){num=0}
+            slide.style.transform = `translateY(-${num*200}px)`
+        }
+    </script>
+</body>
+</html>

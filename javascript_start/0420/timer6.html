@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer6</title>
+    <style>
+        main {
+            text-align:center; display:flex; flex-flow:column; justify-content:center;
+        }
+        main .number {font-size:5rem; font-weight:600;}
+        #pause {padding:20px;}
+    </style>
+</head>
+<body>
+    <main>
+        <p>3초 후 광고페이지로 이동합니다. 원하지 않으면 취소를 누르세요</p>
+        <div class="number"><!-- 카운트다운! --></div>
+        <button type="button" id="pause">멈춤</button>
+        <button type="button" id="play">재생</button>
+    </main>
+    <script>
+        const number = document.querySelector('.number')
+        const pause = document.querySelector('#pause')
+        const play = document.querySelector('#play')
+        let num = 3
+        let count_timer = setInterval(count_timer_func,1000)
+        let count_timer2 = setTimeout(count_timer_func2,3000)
+
+        play.addEventListener('click',()=>{
+            num = 3
+            number.innerHTML = num
+            count_timer = setInterval(count_timer_func,1000)
+            count_timer2 = setTimeout(count_timer_fun2,3000)
+        })
+
+        pause.addEventListener('click',()=>{
+            clearInterval(count_timer)
+            clearTimeout(count_timer2)
+            console.log(stop)
+        })
+
+        function count_timer_func2 (){
+            window.location = 'http://google.com'
+        }
+        number.innerHTML = num
+        function count_timer_func (){
+            console.log(`setInterval-${num}`)
+            if(num > 0){
+                --num
+                number.innerHTML = num
+                // break;
+            }
+            if(num <= 0){
+                number.innerHTML = '이동'
+            }
+            //else if는 위의 if가 거짓이라는 뜻이므로 다른 if문을 생성.
+        }
+    </script>
+</body>
+</html>

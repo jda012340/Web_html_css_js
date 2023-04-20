@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer2</title>
+    <style>
+        *{box-sizing:border-box; margin:0; padding:0;}
+        #slider_wrap {
+        height:200px; width:max-content; /* overflow:hidden; */ margin:0 auto;
+        }
+        #slider_wrap #slider_container {
+        }
+        #slider_wrap #slider_container .slide {
+            position:absolute; top:0; left:0; opacity:0;
+            height:200px; width:700px; text-align:center; font-size:5rem; transition:opacity 0.5s linear;
+        }
+        #slider_wrap #slider_container .slide1 {background-color:yellow; color:#000; opacity:1;}
+        #slider_wrap #slider_container .slide2 {background-color:yellowgreen; color:purple;}
+        #slider_wrap #slider_container .slide3 {background-color:lightblue; color:orange;}
+        #slider_wrap #slider_container .slide4 {background-color:lightpink; color:green;}
+        #slider_wrap #slider_container .slide5 {background-color:lavender; color:yellow;}
+    </style>
+</head>
+<body>
+    <div id="slider_wrap"><!-- 나간 슬라이드 숨기기 -->
+        <div id="slider_container"><!-- 슬라이드를 옆으로 나열 -->
+            <div class="slide slide1">검정</div><!-- 개별슬라이드 -->
+            <div class="slide slide2">보라</div>
+            <div class="slide slide3">주황</div>
+            <div class="slide slide4">초록</div>
+            <div class="slide slide5">노랑</div>
+        </div>
+    </div>
+    <script>
+        const slide = document.querySelector('#slider_container')
+        let num=0
+        let numMax=slide.children.length-1
+        let timer = setInterval(slideMove,2000)
+
+        function slideMove(){
+            num++
+            if(num>numMax){num=0}
+            for(let i of slide.children){
+                i.style.opacity = 0
+            }
+            slide.children[num].style.opacity = 1
+        }
+    </script>
+</body>
+</html>

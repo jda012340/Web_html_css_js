@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer1</title>
+</head>
+<body>
+    <script>
+        //setinterval 일정시간 반복 타이머 함수(슬라이드 같은 곳)
+        let num = 0
+        setInterval(()=>{
+            if(num>5){num=0}
+            console.log(`setInterval-`+num)
+            num++
+        },500)
+        //우리는 1초마다 변수를 생성하는 것이 아니라 증가 시켜야하므로 변수생성은 setinterval밖에서
+        //num++의 위치가 console 다음인 이유. num++를 먼저쓰면 num을 1로 설정했는데 확인하지 않고 증가시킨 후 확인하는 것이기 때문에 1 없이 2부터 보임.
+        // 만약 num에 0을 대입했었다면 console전에 num++를 써야 console에 1부터 보이게 됨. 
+    </script>
+</body>
+</html>

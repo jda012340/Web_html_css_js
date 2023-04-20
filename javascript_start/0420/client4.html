@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client3</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        body,html {
+            /* cursor:none; */
+            text-align:center;
+        }
+        nav {padding:30px;}
+        nav a {
+            font-weight:600;
+        }
+        a:hover {color:#eee;}
+        main {
+            background-color:#222; padding:60px; height:100vh;
+        }
+        .contentWrap {
+            display:inline-block;
+        }
+        .contentWrap *  {color:#fff;}
+        .contentWrap h1 {
+            font-weight:900; font-size:1.5rem; padding:20px;
+        }
+        .contentWrap p {}
+        .circle {
+            pointer-events:none;
+            position:fixed; left:0; top:0;
+            width:50px; height:50px; border-radius:50%;
+            border:2px solid rgba(255,255,255,0.5);
+            transition:all 0.01s ease; transform:translate(-50%,-50%);
+        }
+        .cursorContent {
+            transform:scale(2); background-color:rgba(255,255,255,0.5); border:none;
+        }
+        .cursorNav {
+            transform:scale(2); background-color:#222; border:none; z-index:-1;
+        }
+        </style>
+</head>
+<body>
+    <nav>
+        <a href="#">menu1</a>
+        <a href="#">menu2</a>
+        <a href="#">menu3</a>
+        <a href="#">menu4</a>
+    </nav>
+    <main>
+        <div class="contentWrap">
+            <h1>Portfolio 2023</h1>
+            <p>웹디자이너 OOO 포트폴리오 사이트입니다</p>
+        </div>
+    </main>
+    <div class="circle"></div>
+    <script>
+        const circle = document.querySelector('.circle')
+        const navA = document.querySelectorAll('nav a')
+        const contentWrap = document.querySelector('.contentWrap')
+        console.log(circle,navA,contentWrap)
+        
+        window.addEventListener('mousemove',(e)=>{
+            circle.style.left = `${e.clientX}px`
+            circle.style.top = `${e.clientY}px`
+        })
+        
+        for(let i of navA){
+            i.addEventListener('mouseover',()=>{
+                circle.classList.add('cursorNav')
+            })
+            i.addEventListener('mouseout',()=>{
+                circle.classList.remove('cursorNav')
+            })
+        }
+        contentWrap.addEventListener('mouseover',()=>{
+            circle.classList.add('cursorContent')
+        })
+        contentWrap.addEventListener('mouseout',()=>{
+            circle.classList.remove('cursorContent')
+        })
+    </script>
+</body>
+</html>

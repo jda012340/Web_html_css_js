@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client3</title>
+    <style>
+        /* body,html {cursor:none;} */
+        nav {
+            display:flex; justify-content:center;
+            background-color:#eee;
+        }
+        nav a {line-height:100px; padding:0 20px;}
+        .circle {
+            /* 마우스 포인트보다 태그가 먼저 닿아서 이벤트인식이 안될 경우 이벤트 해제하기 */
+            pointer-events:none;/* <==== 태그의 이벤트 해제하기 */
+            width:30px; height:30px; border-radius:50%; border:2px solid #000;
+            position:fixed; left:0; top:0;
+            transition:all 0.2s ease; 
+            /* 마우스 포인트 중간으로 하는 법 */
+            transform:translate(-50%,-50%);
+        }
+        .circle_style {
+            background:linear-gradient(lemonchiffon,pink); border:red; z-index:-1;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">menu1</a>
+        <a href="#">menu2</a>
+        <a href="#">menu3</a>
+        <a href="#">menu4</a>
+    </nav>
+    <div class="circle"></div>
+    <script>
+        const circle = document.querySelector('.circle')
+        const navA = document.querySelectorAll('nav a')
+        console.log(circle,navA)
+
+        window.addEventListener('mousemove',(e)=>{
+            circle.style.left = `${e.clientX}px`
+            circle.style.top = `${e.clientY}px`
+        })
+
+        for(let i of navA){
+            i.addEventListener('mouseover',()=>{
+                console.log('over')
+                circle.classList.add('circle_style')
+            })
+            i.addEventListener('mouseout',()=>{
+                console.log('out')
+                circle.classList.remove('circle_style')
+            })
+        }
+    </script>
+</body>
+</html>
