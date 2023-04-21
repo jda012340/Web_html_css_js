@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naver</title>
+    <style>
+        iframe {
+            width:40%; height:100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- php : 서버측 영어 => 웹서버에 업로드 후 확인가능 -->
+    <?php include("header.php") ?>
+    <main>
+        <div class="login_box">로그인</div>
+        <div class="news">
+            <iframe src="http://jda01234.dothome.co.kr/gnuboard/bbs/board.php?bo_table=borad_test" frameborder="0"></iframe>
+        </div>
+        <div class="webtoon">웹툰</div>
+    </main>
+    <?php include("footer.php")?>
+</body>
+</html>
