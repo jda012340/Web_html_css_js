@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trigger</title>
+    <!-- plugin cdn js 연결(필수) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <style>
+        .opacity { 
+            opacity:1 !important;  /* important:부모에 상관없이 강제우선순위 */
+            transform:scale(1.2); border-radius:100%;
+        }
+        .move {
+            transform:translateX(-999px);
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <div class="wrap wrap1"> <!-- 공통 / 개별클래스 적용 -->
+            <div class="bg bg1">
+                <h1>그랜드 조선 부산 호텔</h1>
+            </div>
+        </div>
+        <div class="wrap wrap2"> <!-- 공통 / 개별클래스 적용 -->
+            <div class="bg bg2">
+                <h1>Grand Josun Busan Hotel</h1>
+            </div>
+        </div>
+        <div class="wrap wrap3"> <!-- 공통 / 개별클래스 적용 -->
+            <div class="bg bg3">
+                <h1>편안한 객실 최상의 서비스</h1>
+            </div>
+        </div>
+        <div class="wrap wrap4"> <!-- 공통 / 개별클래스 적용 -->
+            <div class="bg bg4">
+                <h1>최고의 휴가를 그랜드 조선 부산호텔과 함께하세요</h1>
+            </div>
+        </div>
+    </main>
+    <footer>footer</footer>
+    <script>
+
+        ScrollTrigger.create({
+            trigger:'.bg2', //bg2가 보일 때 적용하겠다.
+            start:'0 70%',
+            end:'100% 0',
+            markers:1,
+            toggleClass:'opacity'
+        })
+        ScrollTrigger.create({
+            trigger:'.bg3',
+            start:'0 90%',
+            end:'100% 0',
+            markers:1,
+            toggleClass:'move'
+        })
+        /* 
+        ScrollTrigger.creat({trigger:'대상'}) //viewport대상 적을필요X
+        ScrollTrigger.create({
+            trigger:'대상',
+            속성:값, 속성:값
+            toggleClass:'클래스명' //toggle:on,off설정(하나의 버튼이 2가지를 번갈아서)
+        })
+        */
+    </script>
+</body>
+</html>

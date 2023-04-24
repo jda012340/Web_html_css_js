@@ -1,0 +1,17 @@
+header, footer {}
+main {}
+main .wrap {}
+main .wrap1 {}
+main .wrap2 {}
+main .wrap3 {}
+main .wrap4 {}
+main .wrap .bg1 {background-image:url(../images/bg1.jpg);}
+main .wrap .bg2 {background-image:url(../images/bg2.jpg);}
+main .wrap .bg3 {background-image:url(../images/bg3.jpg); transition:all 0.5s;}
+main .wrap .bg4 {background-image:url(../images/bg4.jpg);}
+main .wrap .bg {
+    background-repeat:no-repeat; background-size:cover;
+    background-position:center; height:100%;
+}
+main .wrap .bg h1 {padding:20px; font-size:3rem; font-weight:600;}
+main .wrap .bg1 h1 {line-height:100vh; color:#fff; text-align:center;}

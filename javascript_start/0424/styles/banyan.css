@@ -1,0 +1,81 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 20px 50px;
+}
+header .menu {
+  font-weight: 700;
+  color: #fff;
+}
+
+main .transl {
+  transform: translateY(100px);
+  opacity: 0;
+}
+main .transreset {
+  transform: translateY(0);
+  opacity: 1;
+}
+main .reservations a {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 990;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #fff;
+}
+main .bg {
+  background: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+main .bg1 {
+  background-image: url(../images/main_bg_new2.jpg);
+}
+main .bg2 {
+  background-image: url(../images/main_con2_bg.jpg);
+}
+main .bg3 {
+  background-image: url(../images/main_con3_bg.jpg);
+}
+main .bg4 {
+  background-image: url(../images/main_con5_bg-.jpg);
+}
+main .bg {
+  padding: 100px;
+}
+main .bg h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+}
+main .bg p {
+  color: #fff;
+  margin-top: 20px;
+  line-height: 1.8;
+}
+main .bg1 h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 100vh;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 40px 250px;
+}
+footer p {
+  color: #aaa;
+}/*# sourceMappingURL=banyan.css.map */

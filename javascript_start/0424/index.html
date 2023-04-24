@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trigger</title>
+    <!-- plugin cdn js 연결(필수) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <div class="wrap wrap1"> <!-- 공통 / 개별클래스 적용 -->
+            <div class="bg bg1">
+                <h1>그랜드 조선 부산 호텔</h1>
+            </div>
+        </div>
+        <div class="wrap wrap2"> <!-- 공통 / 개별클래스 적용 -->
+            <div class="bg bg2">
+                <h1>Grand Josun Busan Hotel</h1>
+            </div>
+        </div>
+        <div class="wrap wrap3"> <!-- 공통 / 개별클래스 적용 -->
+            <div class="bg bg3">
+                <h1>편안한 객실 최상의 서비스</h1>
+            </div>
+        </div>
+        <div class="wrap wrap4"> <!-- 공통 / 개별클래스 적용 -->
+            <div class="bg bg4">
+                <h1>최고의 휴가를 그랜드 조선 부산호텔과 함께하세요</h1>
+            </div>
+        </div>
+    </main>
+    <footer>footer</footer>
+    <script>
+        gsap.to('.bg1 h1', {
+            scrollTrigger:'.wrap1',
+            duration:1,
+            fontSize:'5rem', y:-100
+        })
+        gsap.to('.bg2 h1', {
+            scrollTrigger:'wrap2',
+            duration:1.5,
+            color:'pink'
+        })
+        gsap.to('.bg2',{
+            scrollTrigger:'.wrap2',
+            duration:1,
+            x:200
+        })
+        gsap.to('.bg3',{
+            scrollTrigger:'.wrap3',
+            duration:0.5,
+            y:100
+        })
+        gsap.to('.bg4',{
+            scrollTrigger:'.wrap4',
+            duration:1.5,
+            x:100, y:100
+        })
+
+        /* 
+        gsap.to('대상',{
+            scrollToTrigger:{
+                trigger:'대상',
+                속성:값, //추가 속성이 있을경우
+                속성:값 //추가 속성이 있을경우
+            },속성:값, duration:재생시간
+        })
+        */
+        
+        /* 
+        gsap.to('대상',{
+            scrollToTrigger:{
+                trigger:'대상',
+                속성:값,
+                속성:값
+            }, 속성:값, duration:재생시간 
+        })
+       */
+
+        /* 
+        gsap.to('대상',{
+            scrollToTrigger:{
+                trigger:'대상',
+                속성:값,
+                속성:값
+            }, 속성:값,duration:재생시간
+        })
+        */
+
+        /* 
+        gsap.to('적용되는대상',{
+            scrollTrigger:'조건대상',
+            top:값,
+            borderRadius:값,
+            duration:재생시간 //중괄호의 의미 잘 생각하기, 안에 값이 2개 이상일 때. 
+        })
+        */
+
+        //wrap이 보이면(viewport) bg1에게 애니메이션을 줘라.
+
+    </script>
+</body>
+</html>
