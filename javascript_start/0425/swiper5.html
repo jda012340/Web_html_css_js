@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper5</title>
+    <!-- swiper cdn(필수) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js" integrity="sha512-hJrV+LKHbu+Hxkn/+ZwGOCMUkap0ZfjJbca9WT38z69+MYmRzMlvUd401TOs1b4byAm4fGDESpEcCbG2A6cibQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css" integrity="sha512-0x5peylECh6ad58xDrjrNZL87Zhg9rdda76yOOHrfGr41VSEwUNmYaK72U/JVScMbSWG1n4Vj35LGmq8ggsqaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- design css -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* swiper plugin적용 시 slide css를 미리 작성하지 않는다. */
+        /* swiper css가 적용하는 css와 충돌방지를 위해 슬라이드 디자인 시에는 반드시 서로 비교하면서 동시 디자인한다. */
+        .swiper {width:1000px;}
+        /* margin:0 auto;, overflow:hidden; 등등이 기본값으로 설정되어있음. */
+        .swiper .swiper-wrapper {}
+        /* transition, transform 기본값 */
+        .swiper .swiper-wrapper .swiper-slide {
+            height:300px;
+        }
+        /* width&height 100%, position:reralive; 기본값 */
+        .swiper .swiper-wrapper .swiper-slide img {width:100%;}
+        .swiper .swiper-pagination-bullet {width:100px; height:5px; border-radius:0; background-color:#fff;}
+        .swiper .swiper-pagination-bullet-active {width:100px; height:5px; border-radius:0; background-color:#000; color:red;}
+        .swiper .swiper-wrapper .slide1 {
+            background-image:url(./images/bnr1.jpg); background-size:cover;
+        }
+        .swiper .swiper-wrapper .slide1 * {color:#fff;}
+        .swiper .swiper-wrapper .slide1 h1 {font-weight:600; font-size:2rem; line-height:1.2; margin-bottom:20px; }
+        .swiper .swiper-wrapper .slide1 p {font-size:1.2rem;}
+    </style>
+    </head>
+<body>
+    <!-- s:swiper main -->
+    <div class="swiper">
+        <!-- s:swiper slide wrap -->
+        <div class="swiper-wrapper">
+            <!-- s:slide -->
+            <div class="swiper-slide slide1">
+                <h1>4월의 마지막 혜택 <br> 로그인하고 받아가세요</h1>
+                <p>2,000p 단 하루!</p>
+            </div>
+            <div class="swiper-slide slide2"><img src="./images/bnr2.jpg" alt=""></div>
+            <div class="swiper-slide slide3"><img src="./images/bnr3.jpg" alt=""></div>
+            <div class="swiper-slide slide4"><img src="./images/bnr3.jpg" alt=""></div>
+            <!-- e:slide -->
+        </div>
+        <!-- e:swiper slide wrap -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- e:swiper main -->
+    <script>
+        const swiper1 = new Swiper('.swiper', {
+            pagination:{
+                el:'.swiper-pagination',
+                type:'bullets',
+                clickable:true,
+                // dynamicBullets:true
+                //선택되게 하기.
+                renderBullet:function(i,name){
+                    return `<span href="#" class="${name}">${i+1}</span>`
+                }
+            }
+        })
+    </script>
+</body>
+</html>

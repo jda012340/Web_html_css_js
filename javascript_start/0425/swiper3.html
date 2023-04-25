@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper1</title>
+    <!-- swiper cdn(필수) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js" integrity="sha512-hJrV+LKHbu+Hxkn/+ZwGOCMUkap0ZfjJbca9WT38z69+MYmRzMlvUd401TOs1b4byAm4fGDESpEcCbG2A6cibQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css" integrity="sha512-0x5peylECh6ad58xDrjrNZL87Zhg9rdda76yOOHrfGr41VSEwUNmYaK72U/JVScMbSWG1n4Vj35LGmq8ggsqaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- design css -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* swiper plugin적용 시 slide css를 미리 작성하지 않는다. */
+        /* swiper css가 적용하는 css와 충돌방지를 위해 슬라이드 디자인 시에는 반드시 서로 비교하면서 동시 디자인한다. */
+        .swiper {width:1000px;}
+        /* margin:0 auto;, overflow:hidden; 등등이 기본값으로 설정되어있음. */
+        .swiper .swiper-wrapper {}
+        /* transition, transform 기본값 */
+        .swiper .swiper-wrapper .swiper-slide {
+            height:300px; padding:30px;
+        }
+        /* width&height 100%, position:reralive; 기본값 */
+        .swiper .swiper-wrapper .swiper-slide img {width:100%;}
+        .swiper .swiper-wrapper .slide1 {background-image:url(./images/bnr1.jpg); background-size:cover;}
+        .swiper .swiper-wrapper .slide2 {background-image:url(./images/bnr2.jpg); background-size:cover;}
+        .swiper .swiper-wrapper .swiper-slide h1 {color:#fff; font-weight:700; font-size:2rem; line-height:1.2;}
+        .swiper .swiper-wrapper .swiper-slide p {color:#fff; font-weight:600; margin-top:15px;}
+        .swiper .swiper-wrapper .swiper-slide a {
+            display:inline-block; color:#000; font-weight:900; margin-top:90px; padding:10px; border:2px solid #fff; border-radius:50px;
+            background-color:#fff;
+        }
+    </style>
+    </head>
+<body>
+    <!-- s:swiper main -->
+    <div class="swiper">
+        <!-- s:swiper slide wrap -->
+        <div class="swiper-wrapper">
+            <!-- s:slide -->
+            <div class="swiper-slide slide1">
+                <h1>4월의 마지막 혜택 <br> 로그인하고 받아가세요</h1>
+                <p>2,000p 단 하루!</p>
+                <a href="#">혜택받으러 가기</a>
+            </div>
+            <div class="swiper-slide slide2">
+                <h1>다가오는 가정의 달,<br>숨기지 말고 표현하세요!</h1>
+                <p>LOVE & THANKS</p>
+                <p>소중한 마음 전하기</p>
+                <a href="#">가정의 달 선물 구입하기</a>
+            </div>
+            <div class="swiper-slide slide3"><img src="./images/bnr3.jpg" alt=""></div>
+            <!-- e:slide -->
+        </div>
+        <!-- e:swiper slide wrap -->
+    </div>
+    <!-- e:swiper main -->
+    <script>
+    const swiper1 = new Swiper('.swiper',{
+        direction:'horizontal',
+        autoplay:{delay:1000},
+        loop:1
+    })
+    </script>
+</body>
+</html>
